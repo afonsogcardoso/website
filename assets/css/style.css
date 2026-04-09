@@ -94,11 +94,12 @@ h1, h2, h3, h4, h5, h6 { font-family: "Raleway", sans-serif; }
   background: var(--dark);
   width: 76px;
   transition: all 0.3s;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+#header.sidebar-expanded { overflow: hidden; }
 @media (max-width: 992px) {
   #header {
     width: 280px;
@@ -113,9 +114,11 @@ h1, h2, h3, h4, h5, h6 { font-family: "Raleway", sans-serif; }
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-.nav-menu { padding: 0; display: block; }
+.nav-menu { padding: 0; display: block; overflow: visible; }
 .nav-menu * { margin: 0; padding: 0; list-style: none; }
+.nav-menu > ul { overflow: visible; }
 .nav-menu > ul > li { position: relative; white-space: nowrap; }
+.nav-menu li.has-sub { position: relative; }
 
 .nav-menu a,
 .nav-menu a:focus {
@@ -1132,7 +1135,7 @@ section { padding: 72px 0; overflow: hidden; }
 @media (min-width: 992px) {
   #header:not(.sidebar-expanded) .nav-menu a:hover,
   #header:not(.sidebar-expanded) .nav-menu li:hover > a {
-    width: 50px !important;
+    width: 100% !important;
     color: #fff;
     background: rgba(255,255,255,0.08);
   }
@@ -1159,7 +1162,36 @@ section { padding: 72px 0; overflow: hidden; }
   margin: 0;
 }
 .nav-menu li.has-sub.open > .sub-menu { display: block; }
-#header:not(.sidebar-expanded) .nav-menu .sub-menu { display: none !important; }
+
+/* Collapsed: hide inline sub-menu, show as hover flyout instead */
+@media (min-width: 992px) {
+  #header:not(.sidebar-expanded) .nav-menu .sub-menu {
+    display: none;
+    position: absolute;
+    left: calc(100% + 12px); /* aligns popup flush with sidebar right edge */
+    top: 0;                  /* aligns with the portfolio button */
+    background: #1e293b;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 6px;
+    min-width: 180px;
+    box-shadow: 6px 6px 28px rgba(0,0,0,0.35);
+    z-index: 99999;
+    white-space: nowrap;
+  }
+  #header:not(.sidebar-expanded) .nav-menu li.has-sub:hover > .sub-menu {
+    display: block;
+  }
+  /* Transparent bridge so the mouse doesn't lose hover crossing the gap */
+  #header:not(.sidebar-expanded) .nav-menu li.has-sub::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 12px;
+    height: 100%;
+  }
+}
 
 .nav-menu .sub-menu li a,
 .nav-menu .sub-menu li a:focus {
@@ -1457,7 +1489,7 @@ body.detail-page { background: var(--bg); }
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
-  margin-top: 24px;
+  margin: 24px 0px;
 }
 .dp-meta-pill {
   display: inline-flex;

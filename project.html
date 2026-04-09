@@ -3,8 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Project — Portfolio</title>
-  <link href="assets/img/favicon.png" rel="icon">
+  <title>Project — Afonso Gomes Cardoso</title>
+  <meta name="description" content="Portfolio project by Afonso Gomes Cardoso — Product Manager and Developer.">
+  <meta name="author" content="Afonso Gomes Cardoso">
+
+  <!-- Open Graph / Link preview (updated by JS for each project) -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         id="og-url"   content="https://afonsogcardoso.pt/project.html">
+  <meta property="og:title"       id="og-title" content="Project — Afonso Gomes Cardoso">
+  <meta property="og:description" id="og-desc"  content="Portfolio project by Afonso Gomes Cardoso.">
+  <meta property="og:image"       id="og-image" content="https://afonsogcardoso.pt/assets/img/profile-img.jpg">
+  <meta property="og:site_name"   content="Afonso Gomes Cardoso">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:site"        content="@afonsogcardoso">
+  <meta name="twitter:title"       id="tw-title" content="Project — Afonso Gomes Cardoso">
+  <meta name="twitter:description" id="tw-desc"  content="Portfolio project by Afonso Gomes Cardoso.">
+  <meta name="twitter:image"       id="tw-image" content="https://afonsogcardoso.pt/assets/img/profile-img.jpg">
+
+  <!-- Theme color -->
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon" type="image/png">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -129,7 +151,27 @@
         return;
       }
 
-      document.title = p.pageTitle || (p.title + ' — Portfolio');
+      var pageTitle = p.pageTitle || (p.title + ' — Afonso Gomes Cardoso');
+      document.title = pageTitle;
+
+      /* Update OG / Twitter meta tags */
+      var base    = 'https://afonsogcardoso.pt/';
+      var imgUrl  = p.sections && p.sections[0] && p.sections[0].image
+                    ? base + p.sections[0].image
+                    : base + 'assets/img/profile-img.jpg';
+      var pageUrl = base + 'project.html?id=' + encodeURIComponent(id);
+
+      function setMeta(id, attr, val) {
+        var el = document.getElementById(id);
+        if (el) el.setAttribute(attr, val);
+      }
+      setMeta('og-url',   'content', pageUrl);
+      setMeta('og-title', 'content', pageTitle);
+      setMeta('og-desc',  'content', p.subtitle || '');
+      setMeta('og-image', 'content', imgUrl);
+      setMeta('tw-title', 'content', pageTitle);
+      setMeta('tw-desc',  'content', p.subtitle || '');
+      setMeta('tw-image', 'content', imgUrl);
 
       document.getElementById('dp-title').textContent    = p.title;
       document.getElementById('dp-subtitle').textContent = p.subtitle;
