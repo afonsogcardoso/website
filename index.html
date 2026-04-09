@@ -4,21 +4,18 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>Afonso Gomes Cardoso</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="Afonso Gomes Cardoso — Product Manager and Developer based in Barcelona. Portfolio of projects in SaaS, integrations, and web." name="description">
+  <meta content="Afonso Cardoso, Product Manager, Developer, Portfolio, SaaS, Barcelona" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <!-- Vendor CSS -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -26,337 +23,349 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Main CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Font Awesome (for fa-* icons) -->
   <script src="https://kit.fontawesome.com/aca8798f2a.js" crossorigin="anonymous"></script>
-  <!-- =======================================================
-  * Template Name: MyResume - v4.6.0
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <!-- Mobile nav toggle -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
 
+  <!-- ======= Sidebar ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
     <nav id="navbar" class="navbar nav-menu">
       <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
+        <li><a href="#hero"      class="nav-link scrollto active"><i class="bx bx-home"></i>         <span>Home</span></a></li>
+        <li><a href="#about"     class="nav-link scrollto">       <i class="bx bx-user"></i>         <span>About</span></a></li>
+        <li><a href="#resume"    class="nav-link scrollto">       <i class="bx bx-file-blank"></i>   <span>Resume</span></a></li>
+        <li class="has-sub" id="nav-portfolio">
+          <a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
+          <ul class="sub-menu">
+            <li><a href="project.html?id=petter">Petter</a></li>
+            <li><a href="project.html?id=content-library">Content Library</a></li>
+            <li><a href="project.html?id=online-proofing">Online Proofing</a></li>
+            <li><a href="project.html?id=documentation">Documentation</a></li>
+          </ul>
         </li>
-        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-        <!-- <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li> -->
+        <li><a href="#contact"   class="nav-link scrollto">       <i class="bx bx-envelope"></i>     <span>Contact</span></a></li>
       </ul>
-    </nav><!-- .nav-menu -->
+    </nav>
 
-  </header><!-- End Header -->
+    <!-- Revolut-style sidebar toggle -->
+    <button class="sidebar-toggle-btn" id="sidebarToggle" title="Expand sidebar" aria-label="Toggle sidebar">
+      <i class="bi bi-arrow-bar-right"></i>
+    </button>
+  </header>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Afonso Gomes Cardoso</h1>
-      <p>I'm <span class="typed" data-typed-items="Product Manager, Developer, Traveler, Padel Player"></span></p>
+  <!-- ======= Hero ======= -->
+  <section id="hero">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <h1>Afonso Gomes<br>Cardoso</h1>
+      <p>I'm a <span class="typed" data-typed-items="Product Manager, Developer, AI Enthusiast, Traveler, Padel Player"></span></p>
       <div class="social-links">
-        <a href="https://twitter.com/afonsogcardoso" class="twitter"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://facebook.com/afonsogcardoso" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://instagram.com/afonsogcardoso" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
-        <a href="https://linkedin.com/in/afonsogcardoso" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://twitter.com/afonsogcardoso"  target="_blank" title="Twitter">  <i class="fa-brands fa-twitter"></i></a>
+        <a href="https://facebook.com/afonsogcardoso" target="_blank" title="Facebook"> <i class="bx bxl-facebook"></i></a>
+        <a href="https://instagram.com/afonsogcardoso" target="_blank" title="Instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://linkedin.com/in/afonsogcardoso" target="_blank" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
-  </section><!-- End Hero -->
+    <div class="hero-scroll">
+      <i class="bi bi-chevron-down"></i>
+      <span>scroll</span>
+    </div>
+  </section>
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
+    <!-- ======= About ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
+
         <div class="section-title">
-          <h2>About</h2>
-          </p>
+          <span class="label">Who I am</span>
+          <h2>About Me</h2>
         </div>
 
-        <div class="row">
+        <div class="row align-items-center g-5">
           <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Product Manager</h3>
-            <p class="fst-italic">
-              Leading the creation and implementation of personalized solutions through analyzing client requirements,
-              developing innovative customization options, and overseeing the team to deliver high-quality solutions.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong><span id="ageDisplay"></span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Lisbon, Portugal</span></li>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>23 Dec 1993</span></li> -->
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.afonsogcardoso.com</span> -->
-                  </li>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>-->
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li> -->
-                  <!--<li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>email@example.com</span></li>-->
-                </ul>
-              </div>
+            <div class="profile-img-wrap" data-aos="fade-right" data-aos-delay="100">
+              <img src="assets/img/profile-img.jpg" alt="Afonso Gomes Cardoso">
             </div>
-            <p>
-              Creative and savvy IT professional with +10 years of experience delivering robust technological solutions.
-              Adept in Agile and Scrum methodologies, I specialize in process improvement, fostering collaboration, and
-              crafting user-centric experiences. Passionate about leveraging technology to exceed client expectations.
-              Outside work, I'm an avid traveler, explorer, and fitness enthusiast with a love for padel and
-              calisthenics.
-            </p>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="150">
+            <div class="content">
+              <h3>Product Manager &amp; Developer</h3>
+              <p class="tagline">
+                Leading the creation and implementation of personalized solutions through analysing client requirements,
+                developing innovative customization options, and overseeing teams to deliver high-quality results.
+              </p>
+
+              <div class="info-grid">
+                <div class="info-item">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  <div>
+                    <strong>City</strong>
+                    <span>Barcelona, Spain</span>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i class="bi bi-mortarboard-fill"></i>
+                  <div>
+                    <strong>Degree</strong>
+                    <span>Master's</span>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i class="bi bi-calendar3"></i>
+                  <div>
+                    <strong>Age</strong>
+                    <span id="ageDisplay"></span>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i class="bi bi-briefcase-fill"></i>
+                  <div>
+                    <strong>Experience</strong>
+                    <span>10+ years</span>
+                  </div>
+                </div>
+              </div>
+
+              <p class="bio">
+                Creative and savvy IT professional with over 10 years of experience delivering robust technological
+                solutions. Adept in Agile and Scrum methodologies, I specialise in process improvement, fostering
+                collaboration, and crafting user-centric experiences. Passionate about leveraging technology —
+                including AI — to exceed expectations. Outside work, I'm an avid traveller, explorer, and fitness
+                enthusiast with a love for padel and calisthenics.
+              </p>
+            </div>
           </div>
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section>
 
-    <!-- ======= Facts Section ======= -->
+    <!-- ======= Facts ======= -->
     <section id="facts" class="facts">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Facts</h2>
-          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p> -->
+          <span class="label">By the numbers</span>
+          <h2>Some Facts</h2>
         </div>
 
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="0">
             <div class="count-box">
               <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
-                class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
               <p>Happy Clients</p>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="count-box">
               <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
-                class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
               <p>Projects</p>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="count-box">
               <i class="fa-solid fa-table-tennis-paddle-ball"></i>
-              <span data-purecounter-start="0" data-purecounter-end="803" data-purecounter-duration="1"
-                class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="803" data-purecounter-duration="1" class="purecounter"></span>
               <p>Hours Playing Padel</p>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="count-box">
               <i class="fa-solid fa-location-pin"></i>
-              <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1"
-                class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
               <p>Visited Cities</p>
             </div>
           </div>
-
         </div>
 
       </div>
-    </section><!-- End Facts Section -->
+    </section>
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
+    <!-- ======= Skills ======= -->
+    <section id="skills" class="skills">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
+          <span class="label">What I bring</span>
           <h2>Skills</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
         </div>
-        <div id="randomShapes" class="icon-box iconbox-blue" style="display: flex;justify-content: space-evenly;"></div>
-        <div class="row skills-content">
 
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><i class="fa-brands fa-html5"></i> HTML <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
+        <div class="row g-5">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="skill-group">
+              <p class="skill-group-title">Product</p>
+              <div class="skill-tags">
+                <span class="skill-tag">Product Strategy</span>
+                <span class="skill-tag">Roadmapping</span>
+                <span class="skill-tag">User Research</span>
+                <span class="skill-tag">Agile / Scrum</span>
+                <span class="skill-tag">Stakeholder Management</span>
+                <span class="skill-tag">KPI Definition</span>
+                <span class="skill-tag">Requirements Analysis</span>
               </div>
             </div>
-
-            <div class="progress">
-              <span class="skill"><i class="fa-brands fa-css3-alt"></i> CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><i class="fa-brands fa-js"></i> JavaScript <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
           </div>
-
-          <div class="col-lg-6">
-
-            <!-- <div class="progress">
-              <span class="skill">PHP <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-group">
+              <p class="skill-group-title">Development</p>
+              <div class="skill-tags">
+                <span class="skill-tag">HTML / CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Supabase</span>
+                <span class="skill-tag">APIs &amp; Integrations</span>
+                <span class="skill-tag">SQL</span>
               </div>
             </div>
-
-            <div class="progress">
-              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            -->
-            <div class="progress">
-              <span class="skill">Photoshop <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
           </div>
-
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-group">
+              <p class="skill-group-title">Tools</p>
+              <div class="skill-tags">
+                <span class="skill-tag">Jira</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Notion</span>
+                <span class="skill-tag">Google Analytics</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Photoshop</span>
+                <span class="skill-tag">AI Tools</span>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
-    </section><!-- End Skills Section -->
+    </section>
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
+    <!-- ======= Resume ======= -->
+    <section id="resume" class="resume section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
+          <span class="label">My journey</span>
           <h2>Resume</h2>
-          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p> -->
         </div>
 
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
+        <div class="row g-5">
+
+          <!-- Experience -->
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="0">
+            <p class="resume-col-title">Professional Experience</p>
+
             <div class="resume-item">
-              <h4>Head of Customization/Product Manager</h4>
-              <h5>December 2019 - Current</h5>
-              <p><em>Skills Workflow, Lisbon (Portugal)</em></p>
+              <h4>Head of Customization / Product Manager</h4>
+              <h5>December 2019 — Present</h5>
+              <p><em>Skills Workflow — Lisbon, Portugal</em></p>
               <ul>
                 <li>Led design, development, and implementation of solutions following Agile/Scrum methodologies.</li>
-                <li>Partnered with design and engineering teams, providing technical guidance throughout project
-                  lifecycles.</li>
+                <li>Partnered with design and engineering teams, providing technical guidance throughout project lifecycles.</li>
                 <li>Supervised client customizations to ensure quality and accurate product delivery.</li>
                 <li>Defined technical requirements and contributed hands-on to development.</li>
               </ul>
             </div>
+
             <div class="resume-item">
               <h4>Operations Manager</h4>
-              <h5>December 2017 - Current</h5>
-              <p><em>Skills Workflow, Lisbon (Portugal)</em></p>
+              <h5>December 2017 — Present</h5>
+              <p><em>Skills Workflow — Lisbon, Portugal</em></p>
               <ul>
-                <li>Implemented cost-saving strategies to optimize software license usage, identifying and achieving
-                  potential
-                  reductions.</li>
+                <li>Implemented cost-saving strategies to optimize software license usage.</li>
                 <li>Researched and deployed new tools and technologies to boost team efficiency.</li>
-                <li>Implemented and audited operational policies and procedures in compliance with ISAE 3402 standards.
-                </li>
-                <li>Conduct and oversee weekly product releases, ensuring smooth deployment.</li>
+                <li>Implemented and audited operational policies in compliance with ISAE 3402 standards.</li>
+                <li>Conducted and oversaw weekly product releases, ensuring smooth deployment.</li>
               </ul>
             </div>
+
             <div class="resume-item">
               <h4>Head of Customer Support</h4>
-              <h5>March 2015 - December 2017</h5>
-              <p><em>B-Guest, Lisbon (Portugal)</em></p>
+              <h5>March 2015 — December 2017</h5>
+              <p><em>B-Guest — Lisbon, Portugal</em></p>
               <ul>
-                <li>Delivered one of Portugal's first mobile app for online check-in and hotel service management.</li>
+                <li>Delivered one of Portugal's first mobile apps for online check-in and hotel service management.</li>
                 <li>Led on-site software implementations, ensuring smooth adoption by hotel clients.</li>
                 <li>Collaborated to improve customer satisfaction and identify growth opportunities.</li>
-                <li>Supported product development and quality assurance through software testing.</li>
+                <li>Supported product development and QA through software testing.</li>
               </ul>
             </div>
+
             <div class="resume-item">
               <h4>Client Manager</h4>
-              <h5>June 2014 - March 2015</h5>
-              <p><em>Nextway Capital, Lisbon (Portugal)</em></p>
+              <h5>June 2014 — March 2015</h5>
+              <p><em>Nextway Capital — Lisbon, Portugal</em></p>
               <ul>
-                <li>Conduct on-site training and workshops for newly acquired clients in the Latam market.</li>
+                <li>Conducted on-site training and workshops for newly acquired clients in the Latam market.</li>
                 <li>Responsible for creating and maintaining comprehensive project documentation.</li>
-                <li>Collaborate with a team of consultants to assist clients in their system transformation process.</li>
-                <li>Contributed to product development and quality assurance, performing software testing.</li>
+                <li>Collaborated with a team of consultants to assist clients in system transformation.</li>
+                <li>Contributed to product development and QA through software testing.</li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Education</h3>
+
+          <!-- Education -->
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <p class="resume-col-title">Education</p>
+
             <div class="resume-item">
-              <h4>Master's Degree - Information Management</h4>
-              <h5>October 2019 - August 2021</h5>
-              <p><em>NOVA IMS - Information Management School, Lisbon, Portugal</em></p>
-              <p>Information Management, Specialization in Information Systems and Technology Management</p>
+              <h4>Master's Degree — Information Management</h4>
+              <h5>October 2019 — August 2021</h5>
+              <p><em>NOVA IMS — Information Management School, Lisbon, Portugal</em></p>
+              <p>Specialization in Information Systems and Technology Management.</p>
             </div>
+
             <div class="resume-item">
-              <h4>Bachelor's Degree - Finance and Accounting</h4>
-              <h5>September 2011 - June 2014</h5>
-              <p><em>ISCTE - University Institute of Lisbon, Lisbon, Portugal</em></p>
+              <h4>Bachelor's Degree — Finance and Accounting</h4>
+              <h5>September 2011 — June 2014</h5>
+              <p><em>ISCTE — University Institute of Lisbon, Lisbon, Portugal</em></p>
             </div>
+
             <div class="resume-item">
-              <h4>Udemy Certificates</h4>
-              <h5>August 2022</h5> <span> <a href="https://www.udemy.com/certificate/UC-fd7ee09e-9f47-40e6-9e43-182b4ed7124b/", target="_blank">SaaS Masterclass: Sales, Marketing and Growth Metrics </a></span>
-              <br>
-              <h5>July 2022</h5> <span><a href="https://www.udemy.com/certificate/UC-fd7ee09e-9f47-40e6-9e43-182b4ed7124b/", target="_blank">Gamification: Motivation Psychology & The Art of Engagement </a></span>
+              <h4>Certificates</h4>
+              <h5>Udemy — 2022</h5>
+              <p>
+                <a href="https://www.udemy.com/certificate/UC-fd7ee09e-9f47-40e6-9e43-182b4ed7124b/" target="_blank" class="cert-link">
+                  <i class="bi bi-box-arrow-up-right"></i> SaaS Masterclass: Sales, Marketing and Growth Metrics
+                </a>
+              </p>
+              <p>
+                <a href="https://www.udemy.com/certificate/UC-fd7ee09e-9f47-40e6-9e43-182b4ed7124b/" target="_blank" class="cert-link">
+                  <i class="bi bi-box-arrow-up-right"></i> Gamification: Motivation Psychology &amp; The Art of Engagement
+                </a>
+              </p>
             </div>
           </div>
+
         </div>
       </div>
-    </section><!-- End Resume Section -->
+    </section>
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
+    <!-- ======= Portfolio ======= -->
+    <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
+          <span class="label">My work</span>
           <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
               <li data-filter=".filter-integration">Integrations</li>
-              <li data-filter=".filter-card">Card</li>
               <li data-filter=".filter-web">Web</li>
             </ul>
           </div>
@@ -364,406 +373,142 @@
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap" data-project="petter">
+              <img src="assets/img/portfolio/petter.png" class="img-fluid" alt="Petter">
+              <div class="portfolio-info">
+                <h4>Petter</h4>
+                <p>Web App &amp; iOS</p>
+                <span class="portfolio-cta">View Project <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-integration">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/content-library.png" class="img-fluid" alt="">
+            <div class="portfolio-wrap" data-project="content-library">
+              <img src="assets/img/portfolio/content-library.png" class="img-fluid" alt="Content Library">
               <div class="portfolio-info">
                 <h4>Content Library</h4>
-                <p>Integration between our platform<br>and a Digital Asset Management system (DAM)</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/content-library.png" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="content-library.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-                    title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
+                <p>DAM Integration</p>
+                <span class="portfolio-cta">View Project <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-integration">
+            <div class="portfolio-wrap" data-project="online-proofing">
+              <img src="assets/img/portfolio/online-proofing.png" class="img-fluid" alt="Online Proofing">
+              <div class="portfolio-info">
+                <h4>Online Proofing</h4>
+                <p>Platform Integration</p>
+                <span class="portfolio-cta">View Project <i class="bi bi-arrow-right"></i></span>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/documentation.png" class="img-fluid" alt="">
+            <div class="portfolio-wrap" data-project="documentation">
+              <img src="assets/img/portfolio/documentation.png" class="img-fluid" alt="Documentation">
               <div class="portfolio-info">
                 <h4>Documentation</h4>
-                <p>Website</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/documentation.png" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Documentation"><i class="bx bx-plus"></i></a>
-                  <a href="documentation-portfolio-details.html" class="portfolio-details-lightbox"
-                    data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
+                <p>Knowledge Base</p>
+                <span class="portfolio-cta">View Project <i class="bi bi-arrow-right"></i></span>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-integration">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/online-proofing.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Online Proofing</h4>
-                <p>Integration between our platform<br>and a Online Proofing platfrom</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/online-proofing.png" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Online Proofing"><i class="bx bx-plus"></i></a>
-                  <a href="online-proofing.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-                    title="Online Proofing"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-                    title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-integration">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-                    title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
 
         </div>
 
       </div>
-    </section> <!-- End Portfolio Section -->
-
-    <!--=======Services Section=======-->
-    <!--
-      <section id="services" class="services">
-        <div class="container" data-aos="fade-up">
-
-          <div class="section-title">
-            <h2>Services</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-              consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-              sit in iste officiis commodi quidem hic quas.</p>
-          </div>
-
-          <div class="row">
-
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-              <div class="icon-box iconbox-blue">
-                <div class="icon">
-                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                      d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
-                    </path>
-                  </svg>
-                  <i class="bx bxl-dribbble"></i>
-                </div>
-                <h4><a href="">Lorem Ipsum</a></h4>
-                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-              data-aos-delay="200">
-              <div class="icon-box iconbox-orange ">
-                <div class="icon">
-                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                      d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
-                    </path>
-                  </svg>
-                  <i class="bx bx-file"></i>
-                </div>
-                <h4><a href="">Sed Perspiciatis</a></h4>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
-              data-aos-delay="300">
-              <div class="icon-box iconbox-pink">
-                <div class="icon">
-                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                      d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781">
-                    </path>
-                  </svg>
-                  <i class="bx bx-tachometer"></i>
-                </div>
-                <h4><a href="">Magni Dolores</a></h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-              <div class="icon-box iconbox-yellow">
-                <div class="icon">
-                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                      d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813">
-                    </path>
-                  </svg>
-                  <i class="bx bx-layer"></i>
-                </div>
-                <h4><a href="">Nemo Enim</a></h4>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-              <div class="icon-box iconbox-red">
-                <div class="icon">
-                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                      d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572">
-                    </path>
-                  </svg>
-                  <i class="bx bx-slideshow"></i>
-                </div>
-                <h4><a href="">Dele Cardo</a></h4>
-                <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon-box iconbox-teal">
-                <div class="icon">
-                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                      d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762">
-                    </path>
-                  </svg>
-                  <i class="bx bx-arch"></i>
-                </div>
-                <h4><a href="">Divera Don</a></h4>
-                <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </section>End Services Section
--->
-    <!-- ======= Testimonials Section ======= -->
-    <!--
-      <section id="testimonials" class="testimonials section-bg">
-        <div class="container" data-aos="fade-up">
-
-          <div class="section-title">
-            <h2>Testimonials</h2>
-          </div>
-
-          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-            <div class="swiper-wrapper">
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                    Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-              -->
-    <!-- End testimonial item -->
-<!--
-    <div class="swiper-slide">
-      <div class="testimonial-item">
-        <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-        <h3>Sara Wilsson</h3>
-        <h4>Designer</h4>
-        <p>
-          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-          Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-          quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-        </p>
-      </div>
-    </div>
-    -->
-    <!-- End testimonial item -->
-<!--
-    <div class="swiper-slide">
-      <div class="testimonial-item">
-        <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-        <h3>Jena Karlis</h3>
-        <h4>Store Owner</h4>
-        <p>
-          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-          Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
-          tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-        </p>
-      </div>
-    </div>
-    -->
-    <!-- End testimonial item -->
-<!--
-    <div class="swiper-slide">
-      <div class="testimonial-item">
-        <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-        <h3>Matt Brandon</h3>
-        <h4>Freelancer</h4>
-        <p>
-          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-          Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
-          minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-        </p>
-      </div>
-    </div>
-  -->
-    <!-- End testimonial item -->
-<!--
-    <div class="swiper-slide">
-      <div class="testimonial-item">
-        <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-        <h3>John Larson</h3>
-        <h4>Entrepreneur</h4>
-        <p>
-          <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-          Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim
-          culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum
-          quid.
-          <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-        </p>
-      </div>
-    </div>
-  -->
-    <!-- End testimonial item -->
-
-    </div>
-    <div class="swiper-pagination"></div>
-    </div>
-
-    </div>
     </section>
-    <!-- End Testimonials Section -->
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <!-- ======= Contact ======= -->
+    <section id="contact" class="contact section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
+          <span class="label">Get in touch</span>
           <h2>Contact</h2>
         </div>
 
-        <div class="row mt-1">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
 
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
+            <div class="info-card">
+              <div class="icon"><i class="bi bi-geo-alt"></i></div>
+              <div>
                 <h4>Location</h4>
-                <p>Lisbon, Portugal</p>
+                <p>Barcelona, Spain</p>
               </div>
+            </div>
 
-              <div class="email">
-                <i class="bi bi-envelope"></i>
+            <div class="info-card">
+              <div class="icon"><i class="bi bi-envelope"></i></div>
+              <div>
                 <h4>Email</h4>
-                <p>afonsogcardoso@gmail.com</p>
+                <p><a href="mailto:afonsogcardoso@gmail.com">afonsogcardoso@gmail.com</a></p>
               </div>
+            </div>
 
-              <!-- <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div> -->
-
+            <div class="info-card">
+              <div class="icon"><i class="bx bxl-linkedin"></i></div>
+              <div>
+                <h4>LinkedIn</h4>
+                <p><a href="https://linkedin.com/in/afonsogcardoso" target="_blank">afonsogcardoso</a></p>
+              </div>
             </div>
 
           </div>
-          <div class="col-lg-8 mt-5 mt-lg-0">
-            <iframe src="https://www.google.com/maps/d/embed?mid=1mO9BC2ld4XmUBablrmhHzCXHt04nGuI&ehbc=2E312F&noprof=1"
-              width="640" height="480"></iframe>
+
+          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="150">
+            <div class="map-wrap">
+              <iframe src="https://www.google.com/maps/d/embed?mid=1mO9BC2ld4XmUBablrmhHzCXHt04nGuI&ehbc=2E312F&noprof=1" allowfullscreen loading="lazy"></iframe>
+            </div>
           </div>
-
-          <!-- <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
-          </div> -->
-
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section>
 
-  </main><!-- End #main -->
+  </main>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
       <h3>Afonso Gomes Cardoso</h3>
-      <!-- <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p> -->
       <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://twitter.com/afonsogcardoso"   target="_blank" title="Twitter">  <i class="bx bxl-twitter"></i></a>
+        <a href="https://facebook.com/afonsogcardoso"  target="_blank" title="Facebook"> <i class="bx bxl-facebook"></i></a>
+        <a href="https://instagram.com/afonsogcardoso" target="_blank" title="Instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://linkedin.com/in/afonsogcardoso" target="_blank" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
       </div>
-      <!-- <div class="copyright">
-        &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
-      </div> -->
-      <!--      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: [license-url] -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-      <!--        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div> -->
+      <div class="copyright">
+        &copy; <span id="footerYear"></span> Afonso Gomes Cardoso
+      </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
+
+  <!-- ======= Portfolio Drawer ======= -->
+  <div class="portfolio-drawer" id="portfolioDrawer" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="drawer-panel" id="drawerPanel">
+      <div class="drawer-header">
+        <div class="drawer-meta">
+          <span class="drawer-category" id="drawerCategory"></span>
+          <h2 class="drawer-title" id="drawerTitle"></h2>
+        </div>
+        <button class="drawer-close" id="drawerClose" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+      </div>
+      <div class="drawer-body" id="drawerBody"></div>
+    </div>
+  </div>
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -774,78 +519,183 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
-
-  <!-- Template Main JS File -->
-  <script src="https://kit.fontawesome.com/aca8798f2a.js" crossorigin="anonymous"></script>
+  <!-- Main JS -->
   <script src="assets/js/main.js"></script>
+
   <script>
-    function calculateAge() {
-      // Get the date of birth from the input element
-      let dob = new Date("12-23-1993");
+    /* ── Utilities ─────────────────────────────────────────── */
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
+    (function() {
+      var dob = new Date(1993, 11, 23), today = new Date();
+      var age = today.getFullYear() - dob.getFullYear();
+      if (today < new Date(today.getFullYear(), dob.getMonth(), dob.getDate())) age--;
+      var el = document.getElementById('ageDisplay');
+      if (el) el.textContent = age;
+    })();
 
-      // Get the current date
-      let currentDate = new Date();
+    /* ── Sidebar Toggle (Revolut-style) ────────────────────── */
+    (function() {
+      var header  = document.getElementById('header');
+      var main    = document.getElementById('main');
+      var btn     = document.getElementById('sidebarToggle');
+      var icon    = btn.querySelector('i');
 
-      // Calculate the age in years
-      let age = currentDate.getFullYear() - dob.getFullYear();
-
-      // Adjust for months and days (if birthday hasn't passed yet this year)
-      let month = currentDate.getMonth() - dob.getMonth();
-      if (month < 0 || (month === 0 && currentDate.getDate() < dob.getDate())) {
-        age--;
+      function setExpanded(expanded) {
+        header.classList.toggle('sidebar-expanded', expanded);
+        main.classList.toggle('sidebar-expanded', expanded);
+        icon.className = expanded ? 'bi bi-arrow-bar-left' : 'bi bi-arrow-bar-right';
+        btn.title = expanded ? 'Collapse sidebar' : 'Expand sidebar';
+        try { localStorage.setItem('sidebarExpanded', expanded ? '1' : '0'); } catch(e) {}
       }
 
-      // Update the age display (assuming you have a span element with id "ageDisplay")
-      document.getElementById("ageDisplay").textContent = age;
-    }
-    // Call the function on page load
-    window.onload = calculateAge;
-    function createIcon(icons) {
-      icons.forEach(i => {
-        const iconDiv = document.createElement("div");
-        iconDiv.classList.add("icon");
-        iconDiv.setAttribute("style", "display: flex; align-items: center; justify-content: center; transition: ease-in-out 0.3s;");
+      // Restore saved state
+      try {
+        if (localStorage.getItem('sidebarExpanded') === '1') setExpanded(true);
+      } catch(e) {}
 
-        const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-        svg.setAttribute("width", "100");
-        svg.setAttribute("height", "100");
-        svg.setAttribute("viewBox", "0 0 600 600");
-        svg.setAttribute("transition", "all ease-in-out 0.3s");
-        svg.setAttribute("position", "absolute");
+      btn.addEventListener('click', function() {
+        setExpanded(!header.classList.contains('sidebar-expanded'));
+      });
+    })();
 
-        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-        path.setAttribute("stroke", "none");
-        path.setAttribute("stroke-width", "0");
-        path.setAttribute("fill", "#f5f5f5");
-        path.setAttribute("d", "M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781");
+    /* ── Portfolio sub-menu toggle ─────────────────────────── */
+    (function() {
+      var portfolioLi = document.getElementById('nav-portfolio');
+      if (!portfolioLi) return;
+      portfolioLi.querySelector('a.scrollto').addEventListener('click', function() {
+        portfolioLi.classList.toggle('open');
+      });
+    })();
 
-        svg.appendChild(path);
+    /* ── Portfolio Drawer ───────────────────────────────────── */
+    (function() {
+      var projects = {
+        'petter': {
+          title:       'Petter',
+          category:    'App · Web & iOS',
+          image:       'assets/img/portfolio/petter-webapp.png',
+          description: 'A scheduling and client management platform built for pet care service providers — groomers, vets, pet sitters, and pet hotels. Manage appointments, clients, and animals in one place, all without commission fees.',
+          highlights: [
+            'Calendar-based scheduling with day, week, month, and list views',
+            'Unlimited client & animal profiles with medical history and notes',
+            'Commission-free marketplace to attract new customers',
+            'Stripe-powered payment links + native iOS app with offline support',
+            'Team access with role-based permissions (Owner, Admin, Member)',
+            'Recurring appointments, custom intake forms, and WhatsApp confirmations'
+          ],
+          link:          'project.html?id=petter',
+          linkLabel:     'Full Case Study',
+          externalLink:  'https://petter.pt',
+          externalLabel: 'Visit petter.pt'
+        },
+        'content-library': {
+          title:       'Content Library',
+          category:    'Integration · DAM',
+          image:       'assets/img/portfolio/content-library.png',
+          description: 'Integration between a project management platform and a Digital Asset Management (DAM) system, enabling seamless asset discovery and task creation without leaving the core workflow.',
+          highlights: [
+            'Embedded DAM search and filtering inside the project management UI',
+            'Asset selection and batch management via shopping cart',
+            'Structured process for specifying asset changes and modifications',
+            'Automated task generation directly from asset requests'
+          ],
+          link:      'project.html?id=content-library',
+          linkLabel: 'Full Case Study'
+        },
+        'online-proofing': {
+          title:       'Online Proofing',
+          category:    'Integration · Review & Approval',
+          image:       'assets/img/portfolio/online-proofing.png',
+          description: 'Integration between a project management platform and an online proofing tool, bringing review and approval workflows directly into the core application — no context switching required.',
+          highlights: [
+            'Embedded proofing viewer inside the project management context',
+            'Real-time annotations and feedback synchronisation',
+            'Automated approval status updates to project tasks',
+            'File versioning maintained consistently across both platforms'
+          ],
+          link:      'project.html?id=online-proofing',
+          linkLabel: 'Full Case Study'
+        },
+        'documentation': {
+          title:       'Documentation',
+          category:    'Web · Knowledge Base',
+          image:       'assets/img/portfolio/documentation.png',
+          description: 'A documentation website to centralise product knowledge, guides, and release notes — making information accessible to both customers and internal teams in a clean, searchable format.',
+          highlights: [
+            'Full-text search across all articles and categories',
+            'Versioned content for different product releases',
+            'Structured navigation with clear hierarchy',
+            'Embedded videos, screenshots, and interactive examples'
+          ],
+          link:      'project.html?id=documentation',
+          linkLabel: 'Full Case Study'
+        }
+      };
 
-        const iconElement = document.createElement("i");
-        iconElement.className = 'fa-brands ' + i.class;
-        iconElement.style.position = 'absolute';
-        iconElement.style.fontSize = '36px';
-        iconElement.style.color = i.color;
-        iconDiv.appendChild(svg);
-        iconDiv.appendChild(iconElement);
-        document.getElementById('randomShapes').appendChild(iconDiv);
-      })
+      var drawer       = document.getElementById('portfolioDrawer');
+      var drawerTitle  = document.getElementById('drawerTitle');
+      var drawerCat    = document.getElementById('drawerCategory');
+      var drawerBody   = document.getElementById('drawerBody');
+      var drawerOverlay= document.getElementById('drawerOverlay');
+      var drawerClose  = document.getElementById('drawerClose');
 
-    }
-    createIcon([{
-      class: "fa-html5",
-      color: "#e5532f"
-    },
-    {
-      class: "fa-js",
-      color: "#f7e02a"
-    }, {
-      class: "fa-css3-alt",
-      color: "#3e9dd7"
-    }
-    ])
+      function openDrawer(key) {
+        var p = projects[key];
+        if (!p) return;
+
+        drawerTitle.textContent = p.title;
+        drawerCat.textContent   = p.category;
+
+        var bullets = p.highlights.map(function(h) {
+          return '<li>' + h + '</li>';
+        }).join('');
+
+        var extBtn = p.externalLink
+          ? '<a href="' + p.externalLink + '" target="_blank" rel="noopener" class="drawer-btn-secondary">'
+            + '<i class="bi bi-box-arrow-up-right"></i> ' + (p.externalLabel || 'Visit Site') + '</a>'
+          : '';
+
+        drawerBody.innerHTML =
+          '<img src="' + p.image + '" class="drawer-screenshot" alt="' + p.title + '">' +
+          '<div class="drawer-content">' +
+            '<span class="drawer-label">About this project</span>' +
+            '<p class="drawer-description">' + p.description + '</p>' +
+            '<span class="drawer-label">Highlights</span>' +
+            '<ul class="drawer-highlights">' + bullets + '</ul>' +
+          '</div>' +
+          '<div class="drawer-actions">' +
+            '<a href="' + p.link + '" class="drawer-btn-primary">' +
+              '<i class="bi bi-arrow-right"></i> ' + (p.linkLabel || 'View Details') +
+            '</a>' +
+            extBtn +
+          '</div>';
+
+        drawer.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        drawerClose.focus();
+      }
+
+      function closeDrawer() {
+        drawer.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      document.querySelectorAll('.portfolio-wrap[data-project]').forEach(function(wrap) {
+        wrap.addEventListener('click', function() { openDrawer(this.dataset.project); });
+        // Keyboard accessibility
+        wrap.setAttribute('tabindex', '0');
+        wrap.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openDrawer(this.dataset.project); }
+        });
+      });
+
+      drawerOverlay.addEventListener('click', closeDrawer);
+      drawerClose.addEventListener('click', closeDrawer);
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeDrawer();
+      });
+    })();
   </script>
 
 </body>
-
 </html>

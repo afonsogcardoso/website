@@ -1,124 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Portfolio Details - Personal Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
+  <title>Documentation — Portfolio</title>
+  <meta content="Skills Workflow documentation website built with Docusaurus, Algolia search, and continuous deployment via Netlify." name="description">
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MyResume - v4.6.0
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
-<body>
+<body class="detail-page">
+
+  <nav class="dp-navbar">
+    <a href="index.html#portfolio" class="dp-back"><i class="bi bi-arrow-left"></i> Portfolio</a>
+    <a href="index.html" class="dp-brand">Afonso Gomes Cardoso</a>
+    <div class="dp-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#resume">Resume</a>
+      <a href="index.html#portfolio">Portfolio</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
 
   <main id="main">
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+    <!-- Hero -->
+    <section class="dp-hero">
       <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/documentation.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/documentation-docs.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/documentation-university.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/documentation-search.png" alt="">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Documentation</h3>
-              <ul>
-                <li><strong>Category</strong>: Website</li>
-                <li><strong>Client</strong>: Skills Workflow Team & Clients</li>
-                <li><strong>Project URL</strong>: <a href="https://documentation.skillsworkflow.com" target="_blank">documentation.skillsworkflow.com</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>Overview</h2>
-              <p>
-                The Skills Workflow Documentation Website offers a clear and organized resource for users to access product information, 
-                guides, and technical references. Built with Docusaurus, it features a fast and accurate Algolia search, multi-language support, and 
-                is continuously deployed via Netlify. Content is managed through a GitHub repository, ensuring version control and collaborative updates.
-              </p>
-              <h3>Core Functionalities</h3>
-              <ul>
-                <li>Centralized hub for all product documentation, ensuring users can easily find relevant content.</li>                
-                <li>Fast and intuitive search powered by Algolia.</li>
-		            <li>Multi-language support to reach a broader audience.</li>
-		            <li>Clear content structure with categories, tags, and navigation for easy discovery.</li>
-		            <li>Markdown-based content creation, enabling fast updates and seamless collaboration.</li>
-		            <li>Continuous deployment with Netlify for efficient publishing.</li>
-		            <li>Version control through GitHub, ensuring access to relevant information across product versions.</li>
-		            <li>Fully responsive design for optimal experience on any device.</li>
-              </ul>
-            </div>
-          </div>
-
+        <h1>Documentation</h1>
+        <p class="dp-hero-sub">A clear, searchable knowledge base that keeps users informed across every version of the product.</p>
+        <div class="dp-badges">
+          <span class="dp-badge"><i class="bi bi-globe"></i> Website</span>
+          <span class="dp-badge"><i class="bi bi-book"></i> Knowledge Base</span>
         </div>
-
+        <div class="dp-meta-pills">
+          <span class="dp-meta-pill"><i class="bi bi-building"></i> Skills Workflow Team &amp; Clients</span>
+          <span class="dp-meta-pill"><i class="bi bi-box-arrow-up-right"></i> <a href="https://documentation.skillsworkflow.com" target="_blank" rel="noopener">documentation.skillsworkflow.com</a></span>
+        </div>
       </div>
-    </section><!-- End Portfolio Details Section -->
+    </section>
 
-  </main><!-- End #main -->
+    <!-- Main screenshot -->
+    <section class="dp-section dp-bg-white" data-aos="fade-up">
+      <div class="container">
+        <span class="dp-section-label">Overview</span>
+        <h2 class="dp-section-title">One place for everything</h2>
+        <p class="dp-section-desc">
+          The Skills Workflow Documentation website gives users a structured, always up-to-date resource for product guides,
+          technical references, and release notes. Built with Docusaurus and continuously deployed via Netlify.
+        </p>
+        <img src="assets/img/portfolio/documentation.png" class="dp-screenshot" alt="Documentation — main view">
+      </div>
+    </section>
+
+    <!-- Screenshot grid -->
+    <section class="dp-section dp-bg-gray" data-aos="fade-up">
+      <div class="container">
+        <span class="dp-section-label">Screens</span>
+        <h2 class="dp-section-title">Across the platform</h2>
+        <p class="dp-section-desc">From guided tutorials to university-style learning paths and instant search.</p>
+        <div class="dp-screenshot-grid cols-3">
+          <div class="dp-screenshot-item">
+            <img src="assets/img/portfolio/documentation-docs.png" alt="Documentation pages">
+            <p>Product documentation</p>
+          </div>
+          <div class="dp-screenshot-item">
+            <img src="assets/img/portfolio/documentation-university.png" alt="University learning paths">
+            <p>University learning paths</p>
+          </div>
+          <div class="dp-screenshot-item">
+            <img src="assets/img/portfolio/documentation-search.png" alt="Algolia-powered search">
+            <p>Algolia-powered search</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="dp-section dp-bg-white" data-aos="fade-up">
+      <div class="container">
+        <span class="dp-section-label">Features</span>
+        <h2 class="dp-section-title">Core functionalities</h2>
+        <p class="dp-section-desc">Eight capabilities built to serve product teams and end-users alike.</p>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="dp-feature-card">
+              <div class="dp-feature-icon"><i class="bi bi-collection"></i></div>
+              <h5>Centralized Hub</h5>
+              <p>A single source of truth for all product documentation — guides, references, and release notes in one place.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="60">
+            <div class="dp-feature-card">
+              <div class="dp-feature-icon"><i class="bi bi-search"></i></div>
+              <h5>Algolia Search</h5>
+              <p>Fast, accurate full-text search powered by Algolia — users find what they need in seconds, not minutes.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="120">
+            <div class="dp-feature-card">
+              <div class="dp-feature-icon"><i class="bi bi-translate"></i></div>
+              <h5>Multi-language Support</h5>
+              <p>Content available in multiple languages to serve a global user base without maintaining separate sites.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="180">
+            <div class="dp-feature-card">
+              <div class="dp-feature-icon"><i class="bi bi-diagram-3"></i></div>
+              <h5>Clear Content Structure</h5>
+              <p>Categories, tags, and intuitive navigation make it easy to browse and discover relevant content.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="240">
+            <div class="dp-feature-card">
+              <div class="dp-feature-icon"><i class="bi bi-markdown"></i></div>
+              <h5>Markdown-based Authoring</h5>
+              <p>Content is written in Markdown — fast to create, easy to review, and seamless to collaborate on via GitHub.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="dp-feature-card">
+              <div class="dp-feature-icon"><i class="bi bi-cloud-upload"></i></div>
+              <h5>Continuous Deployment</h5>
+              <p>Every merge to the main branch triggers an automatic Netlify deployment — zero manual publishing steps.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="360">
+            <div class="dp-feature-card">
+              <div class="dp-feature-icon"><i class="bi bi-git"></i></div>
+              <h5>Version Control</h5>
+              <p>Content lives in GitHub — full history, branching, and pull request reviews keep documentation in sync with the product.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="420">
+            <div class="dp-feature-card">
+              <div class="dp-feature-icon"><i class="bi bi-phone"></i></div>
+              <h5>Fully Responsive</h5>
+              <p>Optimised layout for desktop, tablet, and mobile — documentation is accessible wherever users are working.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech stack -->
+    <section class="dp-section dp-bg-gray" data-aos="fade-up">
+      <div class="container">
+        <span class="dp-section-label">Built with</span>
+        <h2 class="dp-section-title">Tech stack</h2>
+        <p class="dp-section-desc">Modern tooling chosen for developer experience and operational simplicity.</p>
+        <div class="dp-stack-tags">
+          <span class="dp-stack-tag">Docusaurus</span>
+          <span class="dp-stack-tag">Algolia</span>
+          <span class="dp-stack-tag">Netlify</span>
+          <span class="dp-stack-tag">GitHub</span>
+          <span class="dp-stack-tag">Markdown</span>
+          <span class="dp-stack-tag">React</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
