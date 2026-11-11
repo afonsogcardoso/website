@@ -2,314 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Project — Afonso Gomes Cardoso</title>
-  <meta name="description" content="Portfolio project by Afonso Gomes Cardoso — Product Manager and Developer.">
-  <meta name="author" content="Afonso Gomes Cardoso">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project · Afonso Cardoso</title>
+  <meta name="description" id="m-desc" content="A project by Afonso Cardoso, product manager for agentic and generative AI.">
+  <meta name="author" content="Afonso Cardoso">
 
-  <!-- Open Graph / Link preview (updated by JS for each project) -->
-  <meta property="og:type"        content="website">
-  <meta property="og:url"         id="og-url"   content="https://afonsogcardoso.pt/project.html">
-  <meta property="og:title"       id="og-title" content="Project — Afonso Gomes Cardoso">
-  <meta property="og:description" id="og-desc"  content="Portfolio project by Afonso Gomes Cardoso.">
-  <meta property="og:image"       id="og-image" content="https://afonsogcardoso.pt/assets/img/profile-img.jpg">
-  <meta property="og:site_name"   content="Afonso Gomes Cardoso">
+  <meta property="og:type" content="website">
+  <meta property="og:url" id="og-url" content="https://afonsogcardoso.com/project.html">
+  <meta property="og:title" id="og-title" content="Project · Afonso Cardoso">
+  <meta property="og:description" id="og-desc" content="A project by Afonso Cardoso.">
+  <meta property="og:image" content="https://afonsogcardoso.com/assets/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Afonso Cardoso">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:site"        content="@afonsogcardoso">
-  <meta name="twitter:title"       id="tw-title" content="Project — Afonso Gomes Cardoso">
-  <meta name="twitter:description" id="tw-desc"  content="Portfolio project by Afonso Gomes Cardoso.">
-  <meta name="twitter:image"       id="tw-image" content="https://afonsogcardoso.pt/assets/img/profile-img.jpg">
+  <meta name="theme-color" content="#c7cbd9">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
-  <!-- Theme color -->
-  <meta name="theme-color" content="#0f172a">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon" type="image/png">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/aca8798f2a.js" crossorigin="anonymous"></script>
-</head>
+
+  </head>
 
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <!-- Mobile nav toggle -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <div class="band">
+    <header class="top">
+      <div class="wrap">
+        <a class="name" href="./">Afonso Cardoso</a>
+        <nav aria-label="Main">
+          <a href="./#work" aria-current="page">Work</a>
+          <a href="./#about" class="opt">About</a>
+          <a href="./#path" class="opt">Path</a>
+          <a href="./#toolbox" class="opt">Toolbox</a>
+          <a href="./#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-  <!-- ======= Sidebar ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="index.html#hero"      class="nav-link"><i class="bx bx-home"></i>         <span>Home</span></a></li>
-        <li><a href="index.html#about"     class="nav-link"><i class="bx bx-user"></i>         <span>About</span></a></li>
-        <li><a href="index.html#resume"    class="nav-link"><i class="bx bx-file-blank"></i>   <span>Resume</span></a></li>
-        <li class="has-sub open" id="nav-portfolio">
-          <a href="index.html#portfolio"   class="nav-link active"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
-          <ul class="sub-menu">
-            <li><a href="project.html?id=petter"          data-pid="petter">Petter</a></li>
-            <li><a href="project.html?id=content-library" data-pid="content-library">Content Library</a></li>
-            <li><a href="project.html?id=online-proofing"  data-pid="online-proofing">Online Proofing</a></li>
-            <li><a href="project.html?id=documentation"   data-pid="documentation">Documentation</a></li>
-          </ul>
-        </li>
-        <li><a href="index.html#contact"   class="nav-link"><i class="bx bx-envelope"></i>    <span>Contact</span></a></li>
-      </ul>
-    </nav>
-
-    <button class="sidebar-toggle-btn" id="sidebarToggle" title="Expand sidebar" aria-label="Toggle sidebar">
-      <i class="bi bi-arrow-bar-right"></i>
-    </button>
-  </header>
-
-  <main id="main">
-
-    <section class="dp-hero" id="dp-hero">
-      <div class="container">
-        <h1 id="dp-title"></h1>
-        <p class="dp-hero-sub" id="dp-subtitle"></p>
-        <div class="dp-badges" id="dp-badges"></div>
-        <div class="dp-meta-pills" id="dp-pills"></div>
-        <div id="dp-cta"></div>
+    <section class="p-hero">
+      <div class="wrap">
+        <a class="back" href="./#work">← All work</a>
+        <h1 id="p-title">Project</h1>
+        <p class="intro" id="p-subtitle"></p>
+        <div class="p-meta" id="p-meta"></div>
       </div>
     </section>
+  </div>
 
-    <div id="dp-sections"></div>
-
+  <main id="main">
+    <div id="p-sections"></div>
+    <nav class="p-next" id="p-next" aria-label="Next project"></nav>
+    <noscript><div class="wrap" style="padding:60px 0"><p>This page needs JavaScript to show the project. <a href="./#work">Back to all work</a>.</p></div></noscript>
   </main>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <footer class="band p-foot">
+    <div class="wrap">
+      <span>© 2026 Afonso Cardoso</span>
+      <a href="./#contact">Get in touch</a>
+    </div>
+  </footer>
 
-  <!-- Vendor JS (same as index.html so main.js has all its dependencies) -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/js/projects.js"></script>
-  <script src="assets/js/main.js"></script>
-
-  <script>
-    /* ── Sidebar toggle (same as index.html) ─────────────────── */
-    (function() {
-      var header = document.getElementById('header');
-      var main   = document.getElementById('main');
-      var btn    = document.getElementById('sidebarToggle');
-      var icon   = btn.querySelector('i');
-
-      function setExpanded(expanded) {
-        header.classList.toggle('sidebar-expanded', expanded);
-        main.classList.toggle('sidebar-expanded', expanded);
-        icon.className = expanded ? 'bi bi-arrow-bar-left' : 'bi bi-arrow-bar-right';
-        btn.title = expanded ? 'Collapse sidebar' : 'Expand sidebar';
-        try { localStorage.setItem('sidebarExpanded', expanded ? '1' : '0'); } catch(e) {}
-      }
-
-      try {
-        if (localStorage.getItem('sidebarExpanded') === '1') setExpanded(true);
-      } catch(e) {}
-
-      btn.addEventListener('click', function() {
-        setExpanded(!header.classList.contains('sidebar-expanded'));
-      });
-    })();
-
-    /* ── Portfolio sub-menu toggle ───────────────────────────── */
-    (function() {
-      var portfolioLi = document.getElementById('nav-portfolio');
-      if (!portfolioLi) return;
-      portfolioLi.querySelector('a.nav-link').addEventListener('click', function() {
-        portfolioLi.classList.toggle('open');
-      });
-    })();
-
-    /* ── Render project content ──────────────────────────────── */
-    (function() {
-      var id = new URLSearchParams(window.location.search).get('id');
-      var p  = id && window.PROJECTS && window.PROJECTS[id];
-
-      /* Mark active project in sub-menu */
-      document.querySelectorAll('.sub-menu a[data-pid]').forEach(function(a) {
-        if (a.getAttribute('data-pid') === id) a.classList.add('sub-active');
-      });
-
-      if (!p) {
-        document.title = 'Project not found — Portfolio';
-        document.getElementById('dp-title').textContent    = 'Project not found';
-        document.getElementById('dp-subtitle').textContent = 'The project you\'re looking for does not exist.';
-        return;
-      }
-
-      var pageTitle = p.pageTitle || (p.title + ' — Afonso Gomes Cardoso');
-      document.title = pageTitle;
-
-      /* Update OG / Twitter meta tags */
-      var base    = 'https://afonsogcardoso.pt/';
-      var imgUrl  = p.sections && p.sections[0] && p.sections[0].image
-                    ? base + p.sections[0].image
-                    : base + 'assets/img/profile-img.jpg';
-      var pageUrl = base + 'project.html?id=' + encodeURIComponent(id);
-
-      function setMeta(id, attr, val) {
-        var el = document.getElementById(id);
-        if (el) el.setAttribute(attr, val);
-      }
-      setMeta('og-url',   'content', pageUrl);
-      setMeta('og-title', 'content', pageTitle);
-      setMeta('og-desc',  'content', p.subtitle || '');
-      setMeta('og-image', 'content', imgUrl);
-      setMeta('tw-title', 'content', pageTitle);
-      setMeta('tw-desc',  'content', p.subtitle || '');
-      setMeta('tw-image', 'content', imgUrl);
-
-      document.getElementById('dp-title').textContent    = p.title;
-      document.getElementById('dp-subtitle').textContent = p.subtitle;
-
-      var badgesEl = document.getElementById('dp-badges');
-      (p.badges || []).forEach(function(b) {
-        badgesEl.innerHTML += '<span class="dp-badge"><i class="' + b.icon + '"></i> ' + esc(b.label) + '</span>';
-      });
-
-      var pillsEl = document.getElementById('dp-pills');
-      (p.pills || []).forEach(function(pill) {
-        var inner = pill.href
-          ? '<a href="' + pill.href + '" target="_blank" rel="noopener">' + esc(pill.text) + '</a>'
-          : esc(pill.text);
-        pillsEl.innerHTML += '<span class="dp-meta-pill"><i class="' + pill.icon + '"></i> ' + inner + '</span>';
-      });
-
-      if (p.cta) {
-        document.getElementById('dp-cta').innerHTML =
-          '<a href="' + p.cta.href + '" target="_blank" rel="noopener" class="dp-hero-cta">' +
-          '<i class="bi bi-box-arrow-up-right"></i> ' + esc(p.cta.label) + '</a>';
-      }
-
-      var sectionsEl = document.getElementById('dp-sections');
-      var bgs = ['dp-bg-white', 'dp-bg-gray'];
-      p.sections.forEach(function(s, i) {
-        sectionsEl.innerHTML += renderSection(s, bgs[i % 2]);
-      });
-    })();
-
-    /* After AOS.init() (fires on window.load), refresh so it picks up rendered sections */
-    window.addEventListener('load', function() {
-      if (typeof AOS !== 'undefined') AOS.refresh();
-    });
-
-    /* ── Render helpers ──────────────────────────────────────── */
-    function esc(str) {
-      return String(str)
-        .replace(/&/g,  '&amp;')
-        .replace(/</g,  '&lt;')
-        .replace(/>/g,  '&gt;')
-        .replace(/"/g,  '&quot;');
-    }
-
-    function sectionHeader(s) {
-      return (s.label ? '<span class="dp-section-label">' + esc(s.label) + '</span>' : '') +
-             '<h2 class="dp-section-title">' + esc(s.title) + '</h2>' +
-             (s.desc ? '<p class="dp-section-desc">' + esc(s.desc) + '</p>' : '');
-    }
-
-    function renderSection(s, bg) {
-      switch (s.type) {
-        case 'overview':        return renderOverview(s, bg);
-        case 'screenshot-grid': return renderScreenshotGrid(s, bg);
-        case 'ios-gallery':     return renderIosGallery(s, bg);
-        case 'features':        return renderFeatures(s, bg);
-        case 'use-cases':       return renderUseCases(s, bg);
-        case 'stack':           return renderStack(s, bg);
-        default: return '';
-      }
-    }
-
-    function renderOverview(s, bg) {
-      return '<section class="dp-section ' + bg + '">' +
-        '<div class="container" data-aos="fade-up">' + sectionHeader(s) +
-        '<img src="' + s.image + '" class="dp-screenshot" alt="' + esc(s.alt || '') + '">' +
-        '</div></section>';
-    }
-
-    function renderScreenshotGrid(s, bg) {
-      var items = s.items.map(function(item) {
-        return '<div class="dp-screenshot-item">' +
-          '<img src="' + item.img + '" alt="' + esc(item.caption) + '">' +
-          '<p>' + esc(item.caption) + '</p></div>';
-      }).join('');
-      return '<section class="dp-section ' + bg + '">' +
-        '<div class="container" data-aos="fade-up">' + sectionHeader(s) +
-        '<div class="dp-screenshot-grid cols-' + s.cols + '">' + items + '</div>' +
-        '</div></section>';
-    }
-
-    function renderIosGallery(s, bg) {
-      var items = s.items.map(function(item, i) {
-        return '<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="' + (i * 100) + '">' +
-          '<img src="' + item.src + '" alt="' + esc(item.alt || '') + '" class="dp-ios-frame">' +
-          '<p class="dp-ios-caption">' + esc(item.caption) + '</p>' +
-          '</div>';
-      }).join('');
-      return '<section class="dp-section ' + bg + '">' +
-        '<div class="container">' +
-        '<div data-aos="fade-up">' + sectionHeader(s) + '</div>' +
-        '<div class="row g-4 justify-content-center">' + items + '</div>' +
-        '</div></section>';
-    }
-
-    function renderFeatures(s, bg) {
-      var colClass = s.cols === 4 ? 'col-lg-3 col-md-4 col-sm-6' : 'col-lg-4 col-md-6';
-      var cards = s.cards.map(function(c, i) {
-        return '<div class="' + colClass + '" data-aos="fade-up" data-aos-delay="' + (i * 60) + '">' +
-          '<div class="dp-feature-card">' +
-          '<div class="dp-feature-icon"><i class="' + c.icon + '"></i></div>' +
-          '<h5>' + esc(c.title) + '</h5>' +
-          '<p>' + esc(c.desc) + '</p>' +
-          '</div></div>';
-      }).join('');
-      return '<section class="dp-section ' + bg + '">' +
-        '<div class="container">' +
-        '<div data-aos="fade-up">' + sectionHeader(s) + '</div>' +
-        '<div class="row g-4">' + cards + '</div>' +
-        '</div></section>';
-    }
-
-    function renderUseCases(s, bg) {
-      var cards = s.cards.map(function(c, i) {
-        return '<div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="' + (i * 80) + '">' +
-          '<div class="dp-usecase-card">' +
-          '<i class="' + c.icon + ' dp-usecase-icon"></i>' +
-          '<h5>' + esc(c.title) + '</h5>' +
-          '<p>' + esc(c.desc) + '</p>' +
-          '</div></div>';
-      }).join('');
-      return '<section class="dp-section ' + bg + '">' +
-        '<div class="container">' +
-        '<div data-aos="fade-up">' + sectionHeader(s) + '</div>' +
-        '<div class="row g-4 mt-1">' + cards + '</div>' +
-        '</div></section>';
-    }
-
-    function renderStack(s, bg) {
-      var tags = s.tags.map(function(t) {
-        return '<span class="dp-stack-tag">' + esc(t) + '</span>';
-      }).join('');
-      return '<section class="dp-section ' + bg + ' text-center" data-aos="fade-up">' +
-        '<div class="container">' + sectionHeader(s) +
-        '<div class="dp-stack-tags">' + tags + '</div>' +
-        '</div></section>';
-    }
-  </script>
-
+  <script src="assets/js/project.js"></script>
 </body>
 </html>

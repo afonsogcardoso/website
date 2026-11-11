@@ -1,22 +1,107 @@
 /* =============================================================
    projects.js — single source of truth for all portfolio data.
    To add a new project: add an entry to window.PROJECTS below.
-   The project.html template renders everything from this data.
+   project.html + assets/js/project.js render everything from this data.
+   Section types: overview, screenshot-grid, ios-gallery, features, use-cases, flow, stack.
    ============================================================= */
 
 window.PROJECTS = {
 
+  /* ─── Skills Workflow AI ──────────────────────────────────── */
+  /* Everything here comes from the public documentation at
+     documentation.skillsworkflow.com/docs/ai — keep it that way. */
+  'skills-workflow-ai': {
+    title:    'Skills Workflow AI',
+    subtitle: 'AI built into the platform agencies already work in: an assistant beside every screen, agents with their own tools, and nothing written without the user saying so.',
+    kind: 'Agentic AI inside a SaaS platform',
+    meta: [
+      { label: 'Role', text: 'Leading the integration of AI into the platform' },
+      { label: 'Status', text: 'In preview' },
+      { label: 'Docs', text: 'documentation.skillsworkflow.com', href: 'https://documentation.skillsworkflow.com/docs/ai/agents' }
+    ],
+    sections: [
+      {
+        type:  'overview',
+        label: 'AI Assistant',
+        title: 'A chat panel beside whatever you are working on',
+        desc:  'You type what you want in plain language. The assistant reads the screen you are on, answers or does the work, and asks you to approve anything it is about to write. It does not open a separate screen and it does not lose your place.',
+        image: 'assets/img/work/sw-ai-assistant.webp',
+        alt:   'The AI Assistant panel showing an approval card before creating a job'
+      },
+      {
+        type:  'features',
+        label: 'Agents',
+        title: 'One agent for each kind of work',
+        desc:  "You pick an agent before you send a message. Each one carries a different set of tools, and that set is the whole of what it can do.",
+        cols:  4,
+        cards: [
+          { title: 'Document Agent',  desc: "Creates, updates, duplicates, finds and moves jobs, deliverables and other documents. Writes briefs from a job type's template." },
+          { title: 'Workflow Agent',  desc: 'Inspects and configures workflows: stages, transitions, actions, roles and approval paths.' },
+          { title: 'Workspace Agent', desc: 'Builds and changes workspaces and dashboards: components, layout, filters and data sources.' },
+          { title: 'Writing Agent',   desc: 'Rewrites, shortens, translates or changes the tone of any text. The agent behind AI Actions in the editor.' }
+        ]
+      },
+      {
+        type:  'flow',
+        label: 'Control',
+        title: 'Nothing is written without you saying so',
+        desc:  'The assistant acts as the signed-in user, so it can never read or change what that person could not. Which actions need approval is set per agent.',
+        steps: [
+          { title: 'Request',  desc: 'Ask for an outcome, and attach the email or file it came from.' },
+          { title: 'Resolve',  desc: 'Tools turn a name the user typed into the right client, project and job type.' },
+          { title: 'Propose',  desc: 'An approval card lists exactly what is about to be written.' },
+          { title: 'Decide',   desc: 'Approve, deny, or edit a value on the card first.' },
+          { title: 'Run',      desc: 'The action runs against the platform API with the user\'s own permissions.' }
+        ]
+      },
+      {
+        type:  'ios-gallery',
+        label: 'In the panel',
+        title: 'Answers from your data, context you control, memory you can read',
+        desc:  "The assistant answers from the agency's own reports, shows every piece of context it is about to send with a switch beside it, and keeps what it has learned about you where you can edit or delete it.",
+        items: [
+          { src: 'assets/img/work/sw-ai-analytics.webp', alt: 'The assistant answering a question about open jobs with a chart', caption: 'Asking your data a question' },
+          { src: 'assets/img/work/sw-ai-context.webp',   alt: 'The agent and context control listing what is sent with a message', caption: 'Agent and context' },
+          { src: 'assets/img/work/sw-ai-memories.webp',  alt: 'The Manage Memories screen', caption: 'Memories' }
+        ]
+      },
+      {
+        type:  'screenshot-grid',
+        label: 'Beyond chat',
+        title: 'In the editor, and on a page of the client\'s own',
+        desc:  'AI Actions put text assistance in the toolbar of every rich text editor, with a menu each agency defines. Client portals are pages generated with AI that read live platform data through the reader\'s own permissions.',
+        cols:  2,
+        items: [
+          { img: 'assets/img/work/sw-ai-actions.webp',     caption: 'AI Actions in the editor toolbar' },
+          { img: 'assets/img/work/sw-ai-status-page.webp', caption: 'A live client status page' }
+        ]
+      },
+      {
+        type:  'features',
+        label: 'Extensibility',
+        title: 'Agencies teach it their own way of working',
+        desc:  'The agents that ship know the platform. Everything below is per tenant, and needs no release.',
+        cols:  3,
+        cards: [
+          { title: 'Skills',              desc: 'Written instruction sets, a SKILL.md with references, that an agent reads when a request calls for them.' },
+          { title: 'Custom agents',       desc: 'A definition, not code: instructions, skills, a tool allow-list, the tools that need approval, and optionally a model.' },
+          { title: 'Reports as tools',    desc: "The agency's own data extraction queries exposed as read-only tools, executed as the asking user." },
+          { title: 'MCP servers',         desc: "An agent can be connected to the agency's own systems through MCP, registered per tenant and named per agent." },
+          { title: 'External agents',     desc: 'An agent can relay the conversation to an AI service the agency already runs, in the same panel.' },
+          { title: 'From your AI tool',   desc: 'A connector lets Claude, Claude Code, Codex and GitHub Copilot build and publish status pages, reports and screens on live data.' }
+        ]
+      }
+    ]
+  },
+
   /* ─── Petter ──────────────────────────────────────────────── */
   'petter': {
-    pageTitle: 'Petter — Portfolio',
     title:    'Petter',
-    subtitle: 'The management app for pet care professionals — scheduling, clients, and marketplace in one place.',
-    badges: [
-      { icon: 'bi bi-globe',  label: 'Web App' },
-      { icon: 'bi bi-apple',  label: 'iOS' }
-    ],
-    pills: [
-      { icon: 'bi bi-building', text: 'Petter' }
+    subtitle: 'A SaaS platform for pet-care businesses: scheduling, clients and a marketplace in one place, with an AI assistant built in.',
+    kind: 'SaaS · Web + iOS',
+    meta: [
+      { label: 'Role', text: 'Full-stack product development' },
+      { label: 'Platforms', text: 'Web app, native iOS app' }
     ],
     cta: { label: 'Visit petter.pt', href: 'https://petter.pt' },
     sections: [
@@ -25,7 +110,7 @@ window.PROJECTS = {
         label: 'Web App',
         title: 'Powerful dashboard, anywhere',
         desc:  'Manage your full business from the browser — scheduling, client records, analytics, and marketplace settings all in one place.',
-        image: 'assets/img/portfolio/petter-webapp.png',
+        image: 'assets/img/work/petter-webapp.webp',
         alt:   'Petter Web App'
       },
       {
@@ -34,9 +119,9 @@ window.PROJECTS = {
         title: 'Your business in your pocket',
         desc:  'Native iPhone app with offline support and real-time sync — manage appointments on the go, from anywhere.',
         items: [
-          { src: 'assets/img/portfolio/petter-ios-home.png',                     alt: 'Petter iOS Home',                caption: 'Home' },
-          { src: 'assets/img/portfolio/petter-ios-appointments-weekview.png',    alt: 'Petter iOS Week View',           caption: 'Week View' },
-          { src: 'assets/img/portfolio/petter-ios-appointment-details.png',      alt: 'Petter iOS Appointment Details', caption: 'Appointment Details' }
+          { src: 'assets/img/work/petter-ios-home.webp',                     alt: 'Petter iOS Home',                caption: 'Home' },
+          { src: 'assets/img/work/petter-ios-appointments-weekview.webp',    alt: 'Petter iOS Week View',           caption: 'Week View' },
+          { src: 'assets/img/work/petter-ios-appointment-details.webp',      alt: 'Petter iOS Appointment Details', caption: 'Appointment Details' }
         ]
       },
       {
@@ -46,14 +131,40 @@ window.PROJECTS = {
         desc:  'Eight capabilities built for professional pet care service providers.',
         cols:  4,
         cards: [
-          { icon: 'bi bi-calendar3',        title: 'Smart Scheduling',    desc: 'Day, week, month, and list views with load-balanced calendar management.' },
-          { icon: 'bi bi-people',           title: 'Client & Pet Profiles', desc: 'Unlimited clients and animals with full history, notes, and medical records.' },
-          { icon: 'bi bi-shop',             title: 'Marketplace',         desc: 'Commission-free channel to attract new customers through a public profile.' },
-          { icon: 'bi bi-credit-card',      title: 'Online Payments',     desc: 'Stripe-powered payment links — or accept cash on arrival. Your choice.' },
-          { icon: 'bi bi-person-badge',     title: 'Team Access',         desc: 'Multi-user support with role-based permissions: Owner, Admin, Member.' },
-          { icon: 'bi bi-arrow-repeat',     title: 'Recurring Bookings',  desc: 'Set up weekly, biweekly, or monthly recurring appointments effortlessly.' },
-          { icon: 'bi bi-file-earmark-text',title: 'Forms & Photos',      desc: 'Custom intake forms and before/after photo documentation per appointment.' },
-          { icon: 'bx bxl-whatsapp',        title: 'WhatsApp & QR',       desc: 'Automated WhatsApp confirmations and QR code pages for customers.' }
+          { title: 'Smart Scheduling',    desc: 'Day, week, month, and list views with load-balanced calendar management.' },
+          { title: 'Client & Pet Profiles', desc: 'Unlimited clients and animals with full history, notes, and medical records.' },
+          { title: 'Marketplace',         desc: 'Commission-free channel to attract new customers through a public profile.' },
+          { title: 'Online Payments',     desc: 'Stripe-powered payment links — or accept cash on arrival. Your choice.' },
+          { title: 'Team Access',         desc: 'Multi-user support with role-based permissions: Owner, Admin, Member.' },
+          { title: 'Recurring Bookings',  desc: 'Set up weekly, biweekly, or monthly recurring appointments effortlessly.' },
+          { title: 'Forms & Photos',      desc: 'Custom intake forms and before/after photo documentation per appointment.' },
+          { title: 'WhatsApp & QR',       desc: 'Automated WhatsApp confirmations and QR code pages for customers.' }
+        ]
+      },
+      {
+        type:  'flow',
+        label: 'AI assistant',
+        title: 'An assistant that acts, and asks first',
+        desc:  'Inside the app, people can ask for things in plain language. The assistant works out what they mean, picks the matching action and, when that action changes data, proposes it for confirmation instead of doing it silently.',
+        steps: [
+          { title: 'Message',    desc: 'The user asks in plain language.' },
+          { title: 'Understand', desc: 'LLM intent classification and entity extraction.' },
+          { title: 'Route',      desc: 'A multi-provider gateway: Anthropic Claude, Google Gemini or any OpenAI-compatible model.' },
+          { title: 'Act',        desc: 'A registry of actions that call the internal APIs.' },
+          { title: 'Confirm',    desc: 'Write actions are proposed for the user to approve.' },
+          { title: 'Record',     desc: 'Audit logging, plus token and cost tracking.' }
+        ]
+      },
+      {
+        type:  'features',
+        label: 'AI imports',
+        title: 'From a photo of a price list to a service catalogue',
+        desc:  'Getting a new business set up is mostly data entry. Petter takes that work away.',
+        cols:  3,
+        cards: [
+          { title: 'AI document extraction', desc: "Imports a business's service catalogue from PDFs or photos into structured records, using Gemini's multimodal input with a JSON schema." },
+          { title: 'CSV and Excel',          desc: 'Spreadsheet imports for businesses that already keep their data in files.' },
+          { title: 'Calendar (.ics)',        desc: 'Calendar imports, so existing appointments come along too.' }
         ]
       },
       {
@@ -62,10 +173,10 @@ window.PROJECTS = {
         title: 'Built for every pet care professional',
         desc:  '',
         cards: [
-          { icon: 'bi bi-scissors',    title: 'Grooming',    desc: 'Load-balanced scheduling by pet size and service duration.' },
-          { icon: 'bi bi-heart-pulse', title: 'Veterinary',  desc: 'Routine consultations with full medical history tracking.' },
-          { icon: 'bi bi-house-heart', title: 'Pet Sitting', desc: 'Daily route planning with per-visit task checklists.' },
-          { icon: 'bi bi-building',    title: 'Pet Hotels',  desc: 'Check-in/check-out management with occupancy control.' }
+          { title: 'Grooming',    desc: 'Load-balanced scheduling by pet size and service duration.' },
+          { title: 'Veterinary',  desc: 'Routine consultations with full medical history tracking.' },
+          { title: 'Pet Sitting', desc: 'Daily route planning with per-visit task checklists.' },
+          { title: 'Pet Hotels',  desc: 'Check-in/check-out management with occupancy control.' }
         ]
       },
       {
@@ -73,22 +184,63 @@ window.PROJECTS = {
         label: 'Tech Stack',
         title: 'Built with modern tools',
         desc:  '',
-        tags:  ['Next.js', 'React', 'Supabase', 'PostgreSQL', 'Stripe', 'Vercel', 'Tailwind CSS', 'Resend', 'Google Maps API']
+        tags:  ['Node.js', 'Next.js', 'React', 'SwiftUI', 'Supabase', 'PostgreSQL', 'Anthropic Claude', 'Google Gemini', 'Stripe', 'Vercel', 'Tailwind CSS', 'Resend', 'Google Maps API']
+      }
+    ]
+  },
+
+  /* ─── HealthOS ────────────────────────────────────────────── */
+  'healthos': {
+    title:    'HealthOS',
+    subtitle: 'A personal health and training analytics platform that turns wearable data into dashboards, and adds an AI coach on top.',
+    kind: 'Personal platform · Web + iOS',
+    meta: [
+      { label: 'Role', text: 'Personal project' },
+      { label: 'Platforms', text: 'Web app, companion iOS app' }
+    ],
+    sections: [
+      {
+        type:  'flow',
+        label: 'How it works',
+        title: 'From the wrist to a coaching conversation',
+        desc:  '',
+        steps: [
+          { title: 'Collect',   desc: 'A companion iOS app reads wearable data from Apple HealthKit.' },
+          { title: 'Sync',      desc: 'Data is synced into Convex as time series.' },
+          { title: 'Visualise', desc: 'A Next.js app turns it into time-series dashboards.' },
+          { title: 'Coach',     desc: 'AI features built on the Vercel AI SDK and Gemini.' }
+        ]
+      },
+      {
+        type:  'features',
+        label: 'AI coaching',
+        title: 'What the coach does',
+        desc:  '',
+        cols:  4,
+        cards: [
+          { title: 'Chat',                    desc: 'Ask questions about your own health and training data.' },
+          { title: 'Training-plan proposals', desc: 'The coach proposes training plans.' },
+          { title: 'Insights',                desc: 'Observations drawn from the data.' },
+          { title: 'Recaps',                  desc: 'Summaries of how things have been going.' }
+        ]
+      },
+      {
+        type:  'stack',
+        label: 'Tech Stack',
+        title: 'Built with',
+        desc:  '',
+        tags:  ['Next.js', 'Convex', 'iOS', 'Apple HealthKit', 'Vercel AI SDK', 'Google Gemini']
       }
     ]
   },
 
   /* ─── Content Library ────────────────────────────────────── */
   'content-library': {
-    pageTitle: 'Content Library — Portfolio',
     title:    'Content Library',
     subtitle: 'Seamless access to digital assets — directly inside the project management workflow, without switching tools.',
-    badges: [
-      { icon: 'bi bi-puzzle', label: 'Integration' },
-      { icon: 'bi bi-images', label: 'DAM' }
-    ],
-    pills: [
-      { icon: 'bi bi-building', text: 'Skills Workflow & Production Agency' }
+    kind: 'Integration · DAM',
+    meta: [
+      { label: 'For', text: 'Skills Workflow and a production agency' }
     ],
     sections: [
       {
@@ -96,7 +248,7 @@ window.PROJECTS = {
         label: 'Overview',
         title: 'Assets where you need them',
         desc:  'The integration embeds DAM search and asset management directly inside the project management platform, eliminating the need to switch tools when working with creative assets.',
-        image: 'assets/img/portfolio/content-library.png',
+        image: 'assets/img/work/content-library.webp',
         alt:   'Content Library — main view'
       },
       {
@@ -106,8 +258,8 @@ window.PROJECTS = {
         desc:  'From browsing assets to creating orders — all without leaving the platform.',
         cols:  2,
         items: [
-          { img: 'assets/img/portfolio/content-library-new-order.png', caption: 'Creating a new asset order' },
-          { img: 'assets/img/portfolio/content-library-orders.png',    caption: 'Orders overview' }
+          { img: 'assets/img/work/content-library-new-order.webp', caption: 'Creating a new asset order' },
+          { img: 'assets/img/work/content-library-orders.webp',    caption: 'Orders overview' }
         ]
       },
       {
@@ -117,12 +269,12 @@ window.PROJECTS = {
         desc:  'Six capabilities designed to connect asset management with project delivery.',
         cols:  3,
         cards: [
-          { icon: 'bi bi-search',          title: 'Embedded DAM Search',  desc: 'Search and filter digital assets by metadata, keywords, and criteria — directly inside the project management UI.' },
-          { icon: 'bi bi-cart3',           title: 'Asset Shopping Cart',  desc: 'Select assets and group them into a cart for batch management and processing in a single request.' },
-          { icon: 'bi bi-pencil-square',   title: 'Change Requests',      desc: 'Provide an interface to request modifications to selected assets — text adaptations, language updates, size requirements.' },
-          { icon: 'bi bi-list-check',      title: 'Structured Process',   desc: 'A defined flow for specifying asset changes, ensuring requests are clear and actionable before they reach production.' },
-          { icon: 'bi bi-lightning-charge',title: 'Automated Tasks',      desc: 'Tasks are automatically generated from asset requests — keeping project tracking aligned without manual effort.' },
-          { icon: 'bi bi-arrow-left-right',title: 'Bidirectional Sync',   desc: 'Asset status and order updates flow between the DAM and the project platform, keeping both systems in sync.' }
+          { title: 'Embedded DAM Search',  desc: 'Search and filter digital assets by metadata, keywords, and criteria — directly inside the project management UI.' },
+          { title: 'Asset Shopping Cart',  desc: 'Select assets and group them into a cart for batch management and processing in a single request.' },
+          { title: 'Change Requests',      desc: 'Provide an interface to request modifications to selected assets — text adaptations, language updates, size requirements.' },
+          { title: 'Structured Process',   desc: 'A defined flow for specifying asset changes, ensuring requests are clear and actionable before they reach production.' },
+          { title: 'Automated Tasks',      desc: 'Tasks are automatically generated from asset requests — keeping project tracking aligned without manual effort.' },
+          { title: 'Bidirectional Sync',   desc: 'Asset status and order updates flow between the DAM and the project platform, keeping both systems in sync.' }
         ]
       }
     ]
@@ -130,15 +282,12 @@ window.PROJECTS = {
 
   /* ─── Online Proofing ────────────────────────────────────── */
   'online-proofing': {
-    pageTitle: 'Online Proofing — Portfolio',
     title:    'Online Proofing',
     subtitle: 'Review and approve creative assets without leaving the project management platform — powered by Ziflow.',
-    badges: [
-      { icon: 'bi bi-puzzle',        label: 'Integration' },
-      { icon: 'bi bi-check2-circle', label: 'Review & Approval' }
-    ],
-    pills: [
-      { icon: 'bi bi-building', text: 'Skills Workflow & Production Agency' }
+    kind: 'Integration · Review & approval',
+    meta: [
+      { label: 'For', text: 'Skills Workflow and a production agency' },
+      { label: 'Partner', text: 'Ziflow' }
     ],
     sections: [
       {
@@ -146,7 +295,7 @@ window.PROJECTS = {
         label: 'Overview',
         title: "Proof review, inside your workflow",
         desc:  "Ziflow's proofing interface is embedded directly inside the project management platform via an iframe, so teams can review, annotate, and approve creative assets without context-switching.",
-        image: 'assets/img/portfolio/online-proofing.png',
+        image: 'assets/img/work/online-proofing.webp',
         alt:   'Online Proofing — main view'
       },
       {
@@ -156,12 +305,12 @@ window.PROJECTS = {
         desc:  'Six capabilities that bring structured review and approval into the project management flow.',
         cols:  3,
         cards: [
-          { icon: 'bi bi-display',          title: 'Embedded Ziflow Viewer',       desc: "Ziflow's proofing interface loads directly inside the platform via an iframe — no separate tab or tool switch required." },
-          { icon: 'bi bi-plus-circle',      title: 'Proof Creation via API',       desc: 'Proofs are created in Ziflow through REST API calls triggered directly from the platform — no manual upload needed.' },
-          { icon: 'bi bi-people',           title: 'Participant Management',       desc: 'Assign reviewers to proof stages, ensuring the right people are looped in at the right point in the review process.' },
-          { icon: 'bi bi-share',            title: 'Shareable Links',             desc: 'Generate shareable proof links to bring in external stakeholders for feedback without requiring platform access.' },
-          { icon: 'bi bi-chat-square-text', title: 'Annotations & Version Tracking', desc: "Reviewers can annotate directly on assets and track version history — full Ziflow proofing capabilities preserved in context." },
-          { icon: 'bi bi-lightning-charge', title: 'Automated Task Creation',     desc: 'Tasks are automatically created from proof review outcomes, keeping project tracking aligned with approval status.' }
+          { title: 'Embedded Ziflow Viewer',       desc: "Ziflow's proofing interface loads directly inside the platform via an iframe — no separate tab or tool switch required." },
+          { title: 'Proof Creation via API',       desc: 'Proofs are created in Ziflow through REST API calls triggered directly from the platform — no manual upload needed.' },
+          { title: 'Participant Management',       desc: 'Assign reviewers to proof stages, ensuring the right people are looped in at the right point in the review process.' },
+          { title: 'Shareable Links',             desc: 'Generate shareable proof links to bring in external stakeholders for feedback without requiring platform access.' },
+          { title: 'Annotations & Version Tracking', desc: "Reviewers can annotate directly on assets and track version history — full Ziflow proofing capabilities preserved in context." },
+          { title: 'Automated Task Creation',     desc: 'Tasks are automatically created from proof review outcomes, keeping project tracking aligned with approval status.' }
         ]
       }
     ]
@@ -169,16 +318,12 @@ window.PROJECTS = {
 
   /* ─── Documentation ─────────────────────────────────────── */
   'documentation': {
-    pageTitle: 'Documentation — Portfolio',
     title:    'Documentation',
     subtitle: 'A clear, searchable knowledge base that keeps users informed across every version of the product.',
-    badges: [
-      { icon: 'bi bi-globe', label: 'Website' },
-      { icon: 'bi bi-book',  label: 'Knowledge Base' }
-    ],
-    pills: [
-      { icon: 'bi bi-building',         text: 'Skills Workflow Team & Clients' },
-      { icon: 'bi bi-box-arrow-up-right', text: 'documentation.skillsworkflow.com', href: 'https://documentation.skillsworkflow.com' }
+    kind: 'Website · Knowledge base',
+    meta: [
+      { label: 'For', text: 'Skills Workflow team and clients' },
+      { label: 'Live', text: 'documentation.skillsworkflow.com', href: 'https://documentation.skillsworkflow.com' }
     ],
     sections: [
       {
@@ -186,7 +331,7 @@ window.PROJECTS = {
         label: 'Overview',
         title: 'One place for everything',
         desc:  "The Skills Workflow Documentation website gives users a structured, always up-to-date resource for product guides, technical references, and release notes. Built with Docusaurus and continuously deployed via Netlify.",
-        image: 'assets/img/portfolio/documentation.png',
+        image: 'assets/img/work/documentation.webp',
         alt:   'Documentation — main view'
       },
       {
@@ -196,9 +341,9 @@ window.PROJECTS = {
         desc:  'From guided tutorials to university-style learning paths and instant search.',
         cols:  3,
         items: [
-          { img: 'assets/img/portfolio/documentation-docs.png',       caption: 'Product documentation' },
-          { img: 'assets/img/portfolio/documentation-university.png', caption: 'University learning paths' },
-          { img: 'assets/img/portfolio/documentation-search.png',     caption: 'Algolia-powered search' }
+          { img: 'assets/img/work/documentation-docs.webp',       caption: 'Product documentation' },
+          { img: 'assets/img/work/documentation-university.webp', caption: 'University learning paths' },
+          { img: 'assets/img/work/documentation-search.webp',     caption: 'Algolia-powered search' }
         ]
       },
       {
@@ -208,14 +353,14 @@ window.PROJECTS = {
         desc:  'Eight capabilities built to serve product teams and end-users alike.',
         cols:  3,
         cards: [
-          { icon: 'bi bi-collection',    title: 'Centralized Hub',          desc: 'A single source of truth for all product documentation — guides, references, and release notes in one place.' },
-          { icon: 'bi bi-search',        title: 'Algolia Search',           desc: 'Fast, accurate full-text search powered by Algolia — users find what they need in seconds, not minutes.' },
-          { icon: 'bi bi-translate',     title: 'Multi-language Support',   desc: 'Content available in multiple languages to serve a global user base without maintaining separate sites.' },
-          { icon: 'bi bi-diagram-3',     title: 'Clear Content Structure',  desc: 'Categories, tags, and intuitive navigation make it easy to browse and discover relevant content.' },
-          { icon: 'bi bi-markdown',      title: 'Markdown-based Authoring', desc: 'Content is written in Markdown — fast to create, easy to review, and seamless to collaborate on via GitHub.' },
-          { icon: 'bi bi-cloud-upload',  title: 'Continuous Deployment',    desc: 'Every merge to the main branch triggers an automatic Netlify deployment — zero manual publishing steps.' },
-          { icon: 'bi bi-git',           title: 'Version Control',          desc: 'Content lives in GitHub — full history, branching, and pull request reviews keep documentation in sync with the product.' },
-          { icon: 'bi bi-phone',         title: 'Fully Responsive',         desc: 'Optimised layout for desktop, tablet, and mobile — documentation is accessible wherever users are working.' }
+          { title: 'Centralized Hub',          desc: 'A single source of truth for all product documentation — guides, references, and release notes in one place.' },
+          { title: 'Algolia Search',           desc: 'Fast, accurate full-text search powered by Algolia — users find what they need in seconds, not minutes.' },
+          { title: 'Multi-language Support',   desc: 'Content available in multiple languages to serve a global user base without maintaining separate sites.' },
+          { title: 'Clear Content Structure',  desc: 'Categories, tags, and intuitive navigation make it easy to browse and discover relevant content.' },
+          { title: 'Markdown-based Authoring', desc: 'Content is written in Markdown — fast to create, easy to review, and seamless to collaborate on via GitHub.' },
+          { title: 'Continuous Deployment',    desc: 'Every merge to the main branch triggers an automatic Netlify deployment — zero manual publishing steps.' },
+          { title: 'Version Control',          desc: 'Content lives in GitHub — full history, branching, and pull request reviews keep documentation in sync with the product.' },
+          { title: 'Fully Responsive',         desc: 'Optimised layout for desktop, tablet, and mobile — documentation is accessible wherever users are working.' }
         ]
       },
       {
