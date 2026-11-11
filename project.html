@@ -2,314 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Project — Afonso Gomes Cardoso</title>
-  <meta name="description" content="Portfolio project by Afonso Gomes Cardoso — Product Manager and Developer.">
-  <meta name="author" content="Afonso Gomes Cardoso">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project · Afonso Cardoso</title>
+  <meta name="description" id="m-desc" content="A project by Afonso Cardoso, product manager for agentic and generative AI.">
+  <meta name="author" content="Afonso Cardoso">
 
-  <!-- Open Graph / Link preview (updated by JS for each project) -->
-  <meta property="og:type"        content="website">
-  <meta property="og:url"         id="og-url"   content="https://afonsogcardoso.pt/project.html">
-  <meta property="og:title"       id="og-title" content="Project — Afonso Gomes Cardoso">
-  <meta property="og:description" id="og-desc"  content="Portfolio project by Afonso Gomes Cardoso.">
-  <meta property="og:image"       id="og-image" content="https://afonsogcardoso.pt/assets/img/profile-img.jpg">
-  <meta property="og:site_name"   content="Afonso Gomes Cardoso">
+  <meta property="og:type" content="website">
+  <meta property="og:url" id="og-url" content="https://afonsogcardoso.com/project.html">
+  <meta property="og:title" id="og-title" content="Project · Afonso Cardoso">
+  <meta property="og:description" id="og-desc" content="A project by Afonso Cardoso.">
+  <meta property="og:image" content="https://afonsogcardoso.com/assets/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Afonso Cardoso">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:site"        content="@afonsogcardoso">
-  <meta name="twitter:title"       id="tw-title" content="Project — Afonso Gomes Cardoso">
-  <meta name="twitter:description" id="tw-desc"  content="Portfolio project by Afonso Gomes Cardoso.">
-  <meta name="twitter:image"       id="tw-image" content="https://afonsogcardoso.pt/assets/img/profile-img.jpg">
+  <meta name="theme-color" content="#f3f0e8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d0e12" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
-  <!-- Theme color -->
-  <meta name="theme-color" content="#0f172a">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon" type="image/png">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script>
+    document.documentElement.classList.add('js');
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/aca8798f2a.js" crossorigin="anonymous"></script>
-</head>
+
+  </head>
 
 <body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h12M9 3l5 5-5 5"/></symbol>
+    <symbol id="i-out" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12 12 4M5.5 4H12v6.5"/></symbol>
+    <symbol id="i-back" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 8H2M7 3 2 8l5 5"/></symbol>
+  </svg>
 
-  <!-- Mobile nav toggle -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-  <!-- ======= Sidebar ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="index.html#hero"      class="nav-link"><i class="bx bx-home"></i>         <span>Home</span></a></li>
-        <li><a href="index.html#about"     class="nav-link"><i class="bx bx-user"></i>         <span>About</span></a></li>
-        <li><a href="index.html#resume"    class="nav-link"><i class="bx bx-file-blank"></i>   <span>Resume</span></a></li>
-        <li class="has-sub open" id="nav-portfolio">
-          <a href="index.html#portfolio"   class="nav-link active"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
-          <ul class="sub-menu">
-            <li><a href="project.html?id=petter"          data-pid="petter">Petter</a></li>
-            <li><a href="project.html?id=content-library" data-pid="content-library">Content Library</a></li>
-            <li><a href="project.html?id=online-proofing"  data-pid="online-proofing">Online Proofing</a></li>
-            <li><a href="project.html?id=documentation"   data-pid="documentation">Documentation</a></li>
-          </ul>
-        </li>
-        <li><a href="index.html#contact"   class="nav-link"><i class="bx bx-envelope"></i>    <span>Contact</span></a></li>
-      </ul>
-    </nav>
+  <a class="skip" href="#main">Skip to content</a>
 
-    <button class="sidebar-toggle-btn" id="sidebarToggle" title="Expand sidebar" aria-label="Toggle sidebar">
-      <i class="bi bi-arrow-bar-right"></i>
-    </button>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="brand-dot"></span>Afonso Cardoso</a>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="index.html#work" aria-current="true">Work</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#path">Path</a>
+        <a href="index.html#toolbox">Toolbox</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <button class="icon-btn theme-toggle" type="button" aria-label="Switch between light and dark theme">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+      </button>
+      <button class="icon-btn menu-toggle" type="button" aria-label="Menu" aria-controls="nav" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg>
+      </button>
+    </div>
   </header>
 
   <main id="main">
-
-    <section class="dp-hero" id="dp-hero">
-      <div class="container">
-        <h1 id="dp-title"></h1>
-        <p class="dp-hero-sub" id="dp-subtitle"></p>
-        <div class="dp-badges" id="dp-badges"></div>
-        <div class="dp-meta-pills" id="dp-pills"></div>
-        <div id="dp-cta"></div>
+    <section class="p-hero">
+      <div class="wrap">
+        <a class="back" href="index.html#work"><svg><use href="#i-back"/></svg> All work</a>
+        <p class="mono" id="p-kind" style="margin-top:36px"></p>
+        <h1 id="p-title" style="margin-top:14px"></h1>
+        <p class="lead" id="p-subtitle"></p>
+        <div class="p-meta" id="p-meta"></div>
       </div>
     </section>
 
-    <div id="dp-sections"></div>
-
+    <div id="p-sections"></div>
+    <nav class="p-next" id="p-next" aria-label="Next project"></nav>
+    <noscript><div class="wrap" style="padding-bottom:80px"><p>This page needs JavaScript to show the project. <a href="index.html#work">Back to all work</a>.</p></div></noscript>
   </main>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Afonso Cardoso</span>
+      <a href="index.html#contact">Get in touch</a>
+    </div>
+  </footer>
 
-  <!-- Vendor JS (same as index.html so main.js has all its dependencies) -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/js/projects.js"></script>
-  <script src="assets/js/main.js"></script>
-
-  <script>
-    /* ── Sidebar toggle (same as index.html) ─────────────────── */
-    (function() {
-      var header = document.getElementById('header');
-      var main   = document.getElementById('main');
-      var btn    = document.getElementById('sidebarToggle');
-      var icon   = btn.querySelector('i');
-
-      function setExpanded(expanded) {
-        header.classList.toggle('sidebar-expanded', expanded);
-        main.classList.toggle('sidebar-expanded', expanded);
-        icon.className = expanded ? 'bi bi-arrow-bar-left' : 'bi bi-arrow-bar-right';
-        btn.title = expanded ? 'Collapse sidebar' : 'Expand sidebar';
-        try { localStorage.setItem('sidebarExpanded', expanded ? '1' : '0'); } catch(e) {}
-      }
-
-      try {
-        if (localStorage.getItem('sidebarExpanded') === '1') setExpanded(true);
-      } catch(e) {}
-
-      btn.addEventListener('click', function() {
-        setExpanded(!header.classList.contains('sidebar-expanded'));
-      });
-    })();
-
-    /* ── Portfolio sub-menu toggle ───────────────────────────── */
-    (function() {
-      var portfolioLi = document.getElementById('nav-portfolio');
-      if (!portfolioLi) return;
-      portfolioLi.querySelector('a.nav-link').addEventListener('click', function() {
-        portfolioLi.classList.toggle('open');
-      });
-    })();
-
-    /* ── Render project content ──────────────────────────────── */
-    (function() {
-      var id = new URLSearchParams(window.location.search).get('id');
-      var p  = id && window.PROJECTS && window.PROJECTS[id];
-
-      /* Mark active project in sub-menu */
-      document.querySelectorAll('.sub-menu a[data-pid]').forEach(function(a) {
-        if (a.getAttribute('data-pid') === id) a.classList.add('sub-active');
-      });
-
-      if (!p) {
-        document.title = 'Project not found — Portfolio';
-        document.getElementById('dp-title').textContent    = 'Project not found';
-        document.getElementById('dp-subtitle').textContent = 'The project you\'re looking for does not exist.';
-        return;
-      }
-
-      var pageTitle = p.pageTitle || (p.title + ' — Afonso Gomes Cardoso');
-      document.title = pageTitle;
-
-      /* Update OG / Twitter meta tags */
-      var base    = 'https://afonsogcardoso.pt/';
-      var imgUrl  = p.sections && p.sections[0] && p.sections[0].image
-                    ? base + p.sections[0].image
-                    : base + 'assets/img/profile-img.jpg';
-      var pageUrl = base + 'project.html?id=' + encodeURIComponent(id);
-
-      function setMeta(id, attr, val) {
-        var el = document.getElementById(id);
-        if (el) el.setAttribute(attr, val);
-      }
-      setMeta('og-url',   'content', pageUrl);
-      setMeta('og-title', 'content', pageTitle);
-      setMeta('og-desc',  'content', p.subtitle || '');
-      setMeta('og-image', 'content', imgUrl);
-      setMeta('tw-title', 'content', pageTitle);
-      setMeta('tw-desc',  'content', p.subtitle || '');
-      setMeta('tw-image', 'content', imgUrl);
-
-      document.getElementById('dp-title').textContent    = p.title;
-      document.getElementById('dp-subtitle').textContent = p.subtitle;
-
-      var badgesEl = document.getElementById('dp-badges');
-      (p.badges || []).forEach(function(b) {
-        badgesEl.innerHTML += '<span class="dp-badge"><i class="' + b.icon + '"></i> ' + esc(b.label) + '</span>';
-      });
-
-      var pillsEl = document.getElementById('dp-pills');
-      (p.pills || []).forEach(function(pill) {
-        var inner = pill.href
-          ? '<a href="' + pill.href + '" target="_blank" rel="noopener">' + esc(pill.text) + '</a>'
-          : esc(pill.text);
-        pillsEl.innerHTML += '<span class="dp-meta-pill"><i class="' + pill.icon + '"></i> ' + inner + '</span>';
-      });
-
-      if (p.cta) {
-        document.getElementById('dp-cta').innerHTML =
-          '<a href="' + p.cta.href + '" target="_blank" rel="noopener" class="dp-hero-cta">' +
-          '<i class="bi bi-box-arrow-up-right"></i> ' + esc(p.cta.label) + '</a>';
-      }
-
-      var sectionsEl = document.getElementById('dp-sections');
-      var bgs = ['dp-bg-white', 'dp-bg-gray'];
-      p.sections.forEach(function(s, i) {
-        sectionsEl.innerHTML += renderSection(s, bgs[i % 2]);
-      });
-    })();
-
-    /* After AOS.init() (fires on window.load), refresh so it picks up rendered sections */
-    window.addEventListener('load', function() {
-      if (typeof AOS !== 'undefined') AOS.refresh();
-    });
-
-    /* ── Render helpers ──────────────────────────────────────── */
-    function esc(str) {
-      return String(str)
-        .replace(/&/g,  '&amp;')
-        .replace(/</g,  '&lt;')
-        .replace(/>/g,  '&gt;')
-        .replace(/"/g,  '&quot;');
-    }
-
-    function sectionHeader(s) {
-      return (s.label ? '<span class="dp-section-label">' + esc(s.label) + '</span>' : '') +
-             '<h2 class="dp-section-title">' + esc(s.title) + '</h2>' +
-             (s.desc ? '<p class="dp-section-desc">' + esc(s.desc) + '</p>' : '');
-    }
-
-    function renderSection(s, bg) {
-      switch (s.type) {
-        case 'overview':        return renderOverview(s, bg);
-        case 'screenshot-grid': return renderScreenshotGrid(s, bg);
-        case 'ios-gallery':     return renderIosGallery(s, bg);
-        case 'features':        return renderFeatures(s, bg);
-        case 'use-cases':       return renderUseCases(s, bg);
-        case 'stack':           return renderStack(s, bg);
-        default: return '';
-      }
-    }
-
-    function renderOverview(s, bg) {
-      return '<section class="dp-section ' + bg + '">' +
-        '<div class="container" data-aos="fade-up">' + sectionHeader(s) +
-        '<img src="' + s.image + '" class="dp-screenshot" alt="' + esc(s.alt || '') + '">' +
-        '</div></section>';
-    }
-
-    function renderScreenshotGrid(s, bg) {
-      var items = s.items.map(function(item) {
-        return '<div class="dp-screenshot-item">' +
-          '<img src="' + item.img + '" alt="' + esc(item.caption) + '">' +
-          '<p>' + esc(item.caption) + '</p></div>';
-      }).join('');
-      return '<section class="dp-section ' + bg + '">' +
-        '<div class="container" data-aos="fade-up">' + sectionHeader(s) +
-        '<div class="dp-screenshot-grid cols-' + s.cols + '">' + items + '</div>' +
-        '</div></section>';
-    }
-
-    function renderIosGallery(s, bg) {
-      var items = s.items.map(function(item, i) {
-        return '<div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="' + (i * 100) + '">' +
-          '<img src="' + item.src + '" alt="' + esc(item.alt || '') + '" class="dp-ios-frame">' +
-          '<p class="dp-ios-caption">' + esc(item.caption) + '</p>' +
-          '</div>';
-      }).join('');
-      return '<section class="dp-section ' + bg + '">' +
-        '<div class="container">' +
-        '<div data-aos="fade-up">' + sectionHeader(s) + '</div>' +
-        '<div class="row g-4 justify-content-center">' + items + '</div>' +
-        '</div></section>';
-    }
-
-    function renderFeatures(s, bg) {
-      var colClass = s.cols === 4 ? 'col-lg-3 col-md-4 col-sm-6' : 'col-lg-4 col-md-6';
-      var cards = s.cards.map(function(c, i) {
-        return '<div class="' + colClass + '" data-aos="fade-up" data-aos-delay="' + (i * 60) + '">' +
-          '<div class="dp-feature-card">' +
-          '<div class="dp-feature-icon"><i class="' + c.icon + '"></i></div>' +
-          '<h5>' + esc(c.title) + '</h5>' +
-          '<p>' + esc(c.desc) + '</p>' +
-          '</div></div>';
-      }).join('');
-      return '<section class="dp-section ' + bg + '">' +
-        '<div class="container">' +
-        '<div data-aos="fade-up">' + sectionHeader(s) + '</div>' +
-        '<div class="row g-4">' + cards + '</div>' +
-        '</div></section>';
-    }
-
-    function renderUseCases(s, bg) {
-      var cards = s.cards.map(function(c, i) {
-        return '<div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="' + (i * 80) + '">' +
-          '<div class="dp-usecase-card">' +
-          '<i class="' + c.icon + ' dp-usecase-icon"></i>' +
-          '<h5>' + esc(c.title) + '</h5>' +
-          '<p>' + esc(c.desc) + '</p>' +
-          '</div></div>';
-      }).join('');
-      return '<section class="dp-section ' + bg + '">' +
-        '<div class="container">' +
-        '<div data-aos="fade-up">' + sectionHeader(s) + '</div>' +
-        '<div class="row g-4 mt-1">' + cards + '</div>' +
-        '</div></section>';
-    }
-
-    function renderStack(s, bg) {
-      var tags = s.tags.map(function(t) {
-        return '<span class="dp-stack-tag">' + esc(t) + '</span>';
-      }).join('');
-      return '<section class="dp-section ' + bg + ' text-center" data-aos="fade-up">' +
-        '<div class="container">' + sectionHeader(s) +
-        '<div class="dp-stack-tags">' + tags + '</div>' +
-        '</div></section>';
-    }
-  </script>
-
+  <script src="assets/js/project.js"></script>
+  <script src="assets/js/site.js"></script>
 </body>
 </html>
