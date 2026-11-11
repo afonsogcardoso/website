@@ -127,24 +127,24 @@ a:hover { color: var(--accent); }
 @media (max-width: 820px) { .section-intro { grid-template-columns: 1fr; } }
 .rule { border-top: 1px solid var(--line); }
 
-/* ---------- Petter ---------- */
-.petter { background: var(--night); color: var(--night-text); border-radius: 10px; padding: clamp(24px, 4.5vw, 60px); }
-.petter h3, .petter strong, .petter b { color: #fff; }
-.petter-top { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(28px, 4vw, 60px); align-items: center; }
-.petter .label { color: var(--night-text); }
-.petter h3 { font-size: clamp(44px, 6vw, 80px); margin: 6px 0 20px; }
-.petter p + p { margin-top: 14px; }
-.petter strong { font-weight: 600; }
-.petter .stack { font-family: var(--display); font-size: 16px; margin-top: 22px; color: var(--night-text); }
-.petter .actions { display: flex; flex-wrap: wrap; gap: 12px 22px; align-items: center; margin-top: 28px; }
-.petter .btn { border-color: #fff; background: #fff; color: var(--night); }
-.petter .btn:hover { background: var(--night-accent); border-color: var(--night-accent); color: var(--night); }
-.petter .actions a:not(.btn) { font-family: var(--display); font-weight: 500; color: #fff; }
-.petter .actions a:not(.btn):hover { color: var(--night-accent); }
+/* ---------- Featured projects (dark, and a light variant) ---------- */
+.feature { background: var(--night); color: var(--night-text); border-radius: 10px; padding: clamp(24px, 4.5vw, 60px); }
+.feature h3, .feature strong, .feature b { color: #fff; }
+.feature-top { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(28px, 4vw, 60px); align-items: center; }
+.feature .label { color: var(--night-text); }
+.feature h3 { font-size: clamp(44px, 6vw, 80px); margin: 6px 0 20px; }
+.feature p + p { margin-top: 14px; }
+.feature strong { font-weight: 600; }
+.feature .stack { font-family: var(--display); font-size: 16px; margin-top: 22px; color: var(--night-text); }
+.feature .actions { display: flex; flex-wrap: wrap; gap: 12px 22px; align-items: center; margin-top: 28px; }
+.feature .btn { border-color: #fff; background: #fff; color: var(--night); }
+.feature .btn:hover { background: var(--night-accent); border-color: var(--night-accent); color: var(--night); }
+.feature .actions a:not(.btn) { font-family: var(--display); font-weight: 500; color: #fff; }
+.feature .actions a:not(.btn):hover { color: var(--night-accent); }
 .shots { position: relative; padding-bottom: 7%; }
 .shots .web { border-radius: 8px; width: 100%; }
 .shots .phone { position: absolute; right: -1.5%; bottom: 0; width: 24%; border-radius: 12px; border: 4px solid #000; box-shadow: 0 18px 40px rgba(0, 0, 0, .55); }
-@media (max-width: 900px) { .petter-top { grid-template-columns: 1fr; } .shots { order: -1; } }
+@media (max-width: 900px) { .feature-top { grid-template-columns: 1fr; } .shots { order: -1; } }
 
 .how { margin-top: clamp(28px, 4vw, 52px); padding-top: clamp(22px, 3vw, 34px); border-top: 1px solid var(--night-line); }
 .how > p { font-family: var(--display); font-weight: 500; color: #fff; font-size: 19px; margin-bottom: 18px; }
@@ -241,19 +241,20 @@ a:hover { color: var(--accent); }
 @media (max-width: 860px) { .p-head { grid-template-columns: 1fr; } .p-head .label { padding-top: 0; } }
 
 .stage { background: var(--night); border-radius: 10px; padding: clamp(12px, 3vw, 40px); }
-.stage img { border-radius: 8px; width: 100%; aspect-ratio: 1800 / 1124; }
+.stage img { border-radius: 8px; width: 100%; aspect-ratio: auto 1800 / 1124; }
 .stage a { display: block; }
 .grid-shots { display: grid; gap: 16px; }
 .grid-shots.cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .grid-shots.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .grid-shots figure { background: var(--night); border-radius: 8px; padding: 12px 12px 0; }
-.grid-shots img { border-radius: 5px; width: 100%; aspect-ratio: 1800 / 1124; }
+.grid-shots img { border-radius: 5px; width: 100%; aspect-ratio: auto 1800 / 1124; }
 .grid-shots figcaption, .phones figcaption { font-family: var(--display); font-size: 15px; color: var(--night-text); padding: 10px 2px 12px; }
 @media (max-width: 820px) { .grid-shots.cols-2, .grid-shots.cols-3 { grid-template-columns: 1fr; } }
 
 .phones { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(12px, 3vw, 40px); background: var(--night); border-radius: 10px; padding: clamp(20px, 5vw, 60px) clamp(20px, 9vw, 130px) clamp(6px, 2vw, 20px); }
-.phones img { border-radius: clamp(10px, 2vw, 20px); width: 100%; aspect-ratio: 720 / 1431; }
+.phones img { border-radius: clamp(10px, 2vw, 20px); width: 100%; aspect-ratio: auto 720 / 1431; }
 .phones figcaption { text-align: center; }
+.phones { align-items: start; }
 @media (max-width: 560px) { .phones { grid-template-columns: 1fr 1fr; padding: 18px 18px 4px; } .phones figure:last-child { display: none; } }
 
 .points { display: grid; gap: 28px clamp(24px, 4vw, 48px); }
@@ -288,7 +289,24 @@ a:hover { color: var(--accent); }
 }
 
 @media print {
-  .top nav, .skip, .hero .actions, .petter .actions { display: none; }
+  .top nav, .skip, .hero .actions, .feature .actions { display: none; }
   body { font-size: 12pt; }
   .section { padding: 28px 0; }
 }
+
+/* Light variant of a featured project, tinted with the portrait colour */
+.feature + .feature { margin-top: 24px; }
+.feature.light { background: #e3e5ee; color: var(--text); }
+.feature.light h3, .feature.light strong, .feature.light b, .feature.light .how > p { color: var(--ink); }
+.feature.light .label, .feature.light .stack { color: var(--muted); }
+.feature.light .btn { background: var(--ink); border-color: var(--ink); color: #fff; }
+.feature.light .btn:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+.feature.light .actions a:not(.btn) { color: var(--ink); }
+.feature.light .actions a:not(.btn):hover { color: var(--accent); }
+.feature.light .how { border-top-color: var(--band-line); }
+.feature.light .steps li + li { border-left-color: var(--band-line); }
+.feature.light .steps li::before { color: var(--accent); }
+.feature.light .shots .web { box-shadow: 0 18px 40px rgba(20, 22, 29, .18); }
+.feature .solo { border-radius: 8px; width: 100%; }
+@media (max-width: 460px) { .feature.light .steps li, .feature.light .steps li + li { border-top-color: var(--band-line); } }
+.feature h3.long { font-size: clamp(36px, 4.2vw, 56px); margin-top: 10px; }

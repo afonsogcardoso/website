@@ -7,6 +7,93 @@
 
 window.PROJECTS = {
 
+  /* ─── Skills Workflow AI ──────────────────────────────────── */
+  /* Everything here comes from the public documentation at
+     documentation.skillsworkflow.com/docs/ai — keep it that way. */
+  'skills-workflow-ai': {
+    title:    'Skills Workflow AI',
+    subtitle: 'AI built into the platform agencies already work in: an assistant beside every screen, agents with their own tools, and nothing written without the user saying so.',
+    kind: 'Agentic AI inside a SaaS platform',
+    meta: [
+      { label: 'Role', text: 'Leading the integration of AI into the platform' },
+      { label: 'Status', text: 'In preview' },
+      { label: 'Docs', text: 'documentation.skillsworkflow.com', href: 'https://documentation.skillsworkflow.com/docs/ai/agents' }
+    ],
+    sections: [
+      {
+        type:  'overview',
+        label: 'AI Assistant',
+        title: 'A chat panel beside whatever you are working on',
+        desc:  'You type what you want in plain language. The assistant reads the screen you are on, answers or does the work, and asks you to approve anything it is about to write. It does not open a separate screen and it does not lose your place.',
+        image: 'assets/img/work/sw-ai-assistant.webp',
+        alt:   'The AI Assistant panel showing an approval card before creating a job'
+      },
+      {
+        type:  'features',
+        label: 'Agents',
+        title: 'One agent for each kind of work',
+        desc:  "You pick an agent before you send a message. Each one carries a different set of tools, and that set is the whole of what it can do.",
+        cols:  4,
+        cards: [
+          { title: 'Document Agent',  desc: "Creates, updates, duplicates, finds and moves jobs, deliverables and other documents. Writes briefs from a job type's template." },
+          { title: 'Workflow Agent',  desc: 'Inspects and configures workflows: stages, transitions, actions, roles and approval paths.' },
+          { title: 'Workspace Agent', desc: 'Builds and changes workspaces and dashboards: components, layout, filters and data sources.' },
+          { title: 'Writing Agent',   desc: 'Rewrites, shortens, translates or changes the tone of any text. The agent behind AI Actions in the editor.' }
+        ]
+      },
+      {
+        type:  'flow',
+        label: 'Control',
+        title: 'Nothing is written without you saying so',
+        desc:  'The assistant acts as the signed-in user, so it can never read or change what that person could not. Which actions need approval is set per agent.',
+        steps: [
+          { title: 'Request',  desc: 'Ask for an outcome, and attach the email or file it came from.' },
+          { title: 'Resolve',  desc: 'Tools turn a name the user typed into the right client, project and job type.' },
+          { title: 'Propose',  desc: 'An approval card lists exactly what is about to be written.' },
+          { title: 'Decide',   desc: 'Approve, deny, or edit a value on the card first.' },
+          { title: 'Run',      desc: 'The action runs against the platform API with the user\'s own permissions.' }
+        ]
+      },
+      {
+        type:  'ios-gallery',
+        label: 'In the panel',
+        title: 'Answers from your data, context you control, memory you can read',
+        desc:  "The assistant answers from the agency's own reports, shows every piece of context it is about to send with a switch beside it, and keeps what it has learned about you where you can edit or delete it.",
+        items: [
+          { src: 'assets/img/work/sw-ai-analytics.webp', alt: 'The assistant answering a question about open jobs with a chart', caption: 'Asking your data a question' },
+          { src: 'assets/img/work/sw-ai-context.webp',   alt: 'The agent and context control listing what is sent with a message', caption: 'Agent and context' },
+          { src: 'assets/img/work/sw-ai-memories.webp',  alt: 'The Manage Memories screen', caption: 'Memories' }
+        ]
+      },
+      {
+        type:  'screenshot-grid',
+        label: 'Beyond chat',
+        title: 'In the editor, and on a page of the client\'s own',
+        desc:  'AI Actions put text assistance in the toolbar of every rich text editor, with a menu each agency defines. Client portals are pages generated with AI that read live platform data through the reader\'s own permissions.',
+        cols:  2,
+        items: [
+          { img: 'assets/img/work/sw-ai-actions.webp',     caption: 'AI Actions in the editor toolbar' },
+          { img: 'assets/img/work/sw-ai-status-page.webp', caption: 'A live client status page' }
+        ]
+      },
+      {
+        type:  'features',
+        label: 'Extensibility',
+        title: 'Agencies teach it their own way of working',
+        desc:  'The agents that ship know the platform. Everything below is per tenant, and needs no release.',
+        cols:  3,
+        cards: [
+          { title: 'Skills',              desc: 'Written instruction sets, a SKILL.md with references, that an agent reads when a request calls for them.' },
+          { title: 'Custom agents',       desc: 'A definition, not code: instructions, skills, a tool allow-list, the tools that need approval, and optionally a model.' },
+          { title: 'Reports as tools',    desc: "The agency's own data extraction queries exposed as read-only tools, executed as the asking user." },
+          { title: 'MCP servers',         desc: "An agent can be connected to the agency's own systems through MCP, registered per tenant and named per agent." },
+          { title: 'External agents',     desc: 'An agent can relay the conversation to an AI service the agency already runs, in the same panel.' },
+          { title: 'From your AI tool',   desc: 'A connector lets Claude, Claude Code, Codex and GitHub Copilot build and publish status pages, reports and screens on live data.' }
+        ]
+      }
+    ]
+  },
+
   /* ─── Petter ──────────────────────────────────────────────── */
   'petter': {
     title:    'Petter',
