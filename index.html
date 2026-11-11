@@ -18,19 +18,14 @@
   <meta property="og:site_name" content="Afonso Cardoso">
   <meta name="twitter:card" content="summary_large_image">
 
-  <meta name="theme-color" content="#f3f0e8" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0d0e12" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#c7cbd9">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
-  <script>
-    document.documentElement.classList.add('js');
-    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
-  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
 
   <script type="application/ld+json">
@@ -54,277 +49,212 @@
   </script>
 </head>
 
-<body>
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <symbol id="i-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h12M9 3l5 5-5 5"/></symbol>
-    <symbol id="i-out" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12 12 4M5.5 4H12v6.5"/></symbol>
-  </svg>
 
+<body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="#top"><span class="brand-dot"></span>Afonso Cardoso</a>
-      <nav class="nav" id="nav" aria-label="Main">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#path">Path</a>
-        <a href="#toolbox">Toolbox</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="icon-btn theme-toggle" type="button" aria-label="Switch between light and dark theme">
-        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
-      </button>
-      <button class="icon-btn menu-toggle" type="button" aria-label="Menu" aria-controls="nav" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg>
-      </button>
-    </div>
-  </header>
+  <div class="band">
+    <header class="top">
+      <div class="wrap">
+        <a class="name" href="./">Afonso Cardoso</a>
+        <nav aria-label="Main">
+          <a href="#work">Work</a>
+          <a href="#about" class="opt">About</a>
+          <a href="#path" class="opt">Path</a>
+          <a href="#toolbox" class="opt">Toolbox</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-  <main id="main">
-
-    <!-- ===== Hero ===== -->
-    <section class="hero" id="top">
-      <div class="wrap hero-grid">
-        <div>
-          <p class="mono status">Product Manager · Agentic &amp; Generative AI</p>
-          <h1>Product manager who builds. Lately, with <em>AI agents</em>.</h1>
-          <p class="lead">
-            I'm Afonso. I lead the integration of AI into the <strong>Skills Workflow</strong> platform,
-            and in my own projects I design and build GenAI products end to end,
-            from the API to the iOS app.
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-text">
+          <p class="label">Product Manager · Agentic &amp; Generative AI</p>
+          <h1>Product manager who builds. Lately, with <span>AI&nbsp;agents</span>.</h1>
+          <p class="intro">
+            I'm Afonso. I lead the integration of AI into the Skills Workflow platform, and in my own
+            projects I build GenAI products end to end, from the API to the iOS app.
           </p>
-          <div class="hero-actions">
-            <a class="btn btn-solid" href="#work">See the work <svg><use href="#i-arrow"/></svg></a>
-            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          <div class="actions">
+            <a class="btn solid" href="mailto:afonsogcardoso@gmail.com">Email me</a>
+            <a class="btn" href="https://www.linkedin.com/in/afonsogcardoso" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="more" href="#work">or see the work ↓</a>
           </div>
         </div>
-        <figure class="portrait">
-          <img src="assets/img/afonso-cardoso.jpg" alt="Portrait of Afonso Cardoso" width="600" height="600">
-          <figcaption><span>Barcelona, Spain</span><span>PT · EN · ES</span></figcaption>
+        <figure>
+          <img src="assets/img/afonso-cardoso.webp" alt="Afonso Cardoso" width="600" height="600" fetchpriority="high">
         </figure>
       </div>
     </section>
+  </div>
 
-    <div class="ticker" aria-hidden="true">
-      <div class="ticker-track">
-        <ul>
-          <li>Claude Agent SDK</li><li>OpenAI Agents SDK</li><li>Microsoft Agents</li><li>MCP</li><li>Multi-agent orchestration</li><li>AG-UI</li><li>Azure OpenAI</li><li>Google Gemini</li><li>Vercel AI SDK</li><li>Supabase</li><li>Convex</li><li>Next.js</li><li>SwiftUI</li>
-        </ul>
-        <ul>
-          <li>Claude Agent SDK</li><li>OpenAI Agents SDK</li><li>Microsoft Agents</li><li>MCP</li><li>Multi-agent orchestration</li><li>AG-UI</li><li>Azure OpenAI</li><li>Google Gemini</li><li>Vercel AI SDK</li><li>Supabase</li><li>Convex</li><li>Next.js</li><li>SwiftUI</li>
-        </ul>
+  <main id="main">
+
+    <div class="glance">
+      <div class="wrap">
+        <dl>
+          <div><dt>Now</dt><dd>Head of Customization / Product Manager, Skills Workflow</dd></div>
+          <div><dt>Based in</dt><dd>Barcelona, Spain</dd></div>
+          <div><dt>Experience</dt><dd>10+ years delivering software</dd></div>
+          <div><dt>Languages</dt><dd>Portuguese, English, Spanish</dd></div>
+        </dl>
       </div>
     </div>
 
     <!-- ===== Work ===== -->
     <section class="section" id="work">
       <div class="wrap">
-        <div class="section-head reveal">
-          <div>
-            <p class="mono">Selected work</p>
-            <h2>Things I've built and shipped</h2>
-          </div>
-          <p>AI products I build on my own time, followed by platform work I've led at Skills Workflow.</p>
+        <div class="section-intro">
+          <h2>Work</h2>
+          <p>First the AI products I build myself, then platform work I've led at Skills Workflow.</p>
         </div>
 
-        <!-- Petter -->
-        <article class="feature reveal">
-          <div class="feature-copy">
-            <p class="mono">01 · SaaS · Web + iOS</p>
-            <h3>Petter</h3>
-            <p>
-              A SaaS platform for pet-care businesses: scheduling, clients and a marketplace in one place.
-              <strong>Full-stack and built end to end</strong>, with a Node.js API, a Next.js web app,
-              a native SwiftUI iOS app and Supabase.
-            </p>
-            <ul class="points">
-              <li><strong>In-app AI assistant</strong> that understands a request, picks the right action and asks before it writes anything.</li>
-              <li><strong>AI document extraction</strong> that turns a PDF or a photo of a price list into a structured service catalogue.</li>
-            </ul>
-            <ul class="tags" aria-label="Stack">
-              <li>Next.js</li><li>Node.js</li><li>SwiftUI</li><li>Supabase</li><li>Claude</li><li>Gemini</li>
-            </ul>
-            <div class="links" style="padding-top:28px">
-              <a class="btn btn-solid" href="project.html?id=petter">Read the case study <svg><use href="#i-arrow"/></svg></a>
-              <a class="link-arrow" href="https://petter.pt" target="_blank" rel="noopener">petter.pt <svg><use href="#i-out"/></svg></a>
+        <article class="petter">
+          <div class="petter-top">
+            <div>
+              <p class="label">SaaS for pet-care businesses · Web and iOS</p>
+              <h3>Petter</h3>
+              <p>
+                Scheduling, clients and a marketplace in one place, for groomers, vets, sitters and pet hotels.
+                It's a <strong>full-stack product</strong>: a Node.js API, a Next.js web app, a native SwiftUI
+                iOS app and Supabase underneath.
+              </p>
+              <p>
+                Two AI features do real work in it. An <strong>in-app assistant</strong> understands a request,
+                picks the right action and asks before it changes anything, and <strong>document extraction</strong>
+                turns a PDF or a photo of a price list into a structured service catalogue.
+              </p>
+              <p class="stack">Next.js, Node.js, SwiftUI, Supabase, Anthropic Claude, Google Gemini</p>
+              <div class="actions">
+                <a class="btn" href="project.html?id=petter">Read the case study</a>
+                <a href="https://petter.pt" target="_blank" rel="noopener">Visit petter.pt ↗</a>
+              </div>
+            </div>
+            <div class="shots">
+              <img class="web" src="assets/img/work/petter-webapp.webp" alt="Petter web app showing the weekly appointment schedule" width="1800" height="1129" loading="lazy">
+              <img class="phone" src="assets/img/work/petter-ios-home.webp" alt="Petter iOS app home screen" width="720" height="1431" loading="lazy">
             </div>
           </div>
-          <div class="feature-shots">
-            <img class="shot-web" src="assets/img/work/petter-webapp.webp" alt="Petter web app showing the weekly appointment schedule" width="1800" height="1129" loading="lazy">
-            <img class="shot-phone" src="assets/img/work/petter-ios-home.webp" alt="Petter iOS app home screen" width="720" height="1431" loading="lazy">
-          </div>
-          <div class="feature-flow">
-            <span class="mono">How the assistant handles a request</span>
-            <ol class="flow">
-              <li><b>Message</b><span>The user asks in plain language</span></li>
-              <li><b>Understand</b><span>LLM intent classification and entity extraction</span></li>
-              <li><b>Route</b><span>Multi-provider gateway: Claude, Gemini, OpenAI-compatible</span></li>
-              <li><b>Act</b><span>A registry of actions that call internal APIs</span></li>
-              <li><b>Confirm</b><span>Write actions are proposed, the user approves</span></li>
-              <li><b>Record</b><span>Audit log, token and cost tracking</span></li>
+
+          <div class="how">
+            <p>How the assistant handles a request</p>
+            <ol class="steps">
+              <li><b>Message</b>The user asks in plain language.</li>
+              <li><b>Understand</b>An LLM classifies the intent and extracts the entities.</li>
+              <li><b>Route</b>A multi-provider gateway: Claude, Gemini or OpenAI-compatible.</li>
+              <li><b>Act</b>A registry of actions that call the internal APIs.</li>
+              <li><b>Confirm</b>Anything that writes is proposed first, and the user approves.</li>
+              <li><b>Record</b>Audit log, plus token and cost tracking.</li>
             </ol>
           </div>
         </article>
 
-        <!-- HealthOS + Instagram audit -->
-        <div class="cards">
-          <article class="card reveal">
-            <div class="card-top">
-              <p class="mono">02 · Personal platform</p>
-              <span class="go" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
-            </div>
-            <h3><a class="card-link" href="project.html?id=healthos">HealthOS</a></h3>
+        <div class="pair">
+          <article>
+            <p class="label">Personal platform · Web and iOS</p>
+            <h3><a href="project.html?id=healthos">HealthOS</a></h3>
             <p>
-              A health and training analytics platform. It syncs wearable data from Apple HealthKit into
-              time-series dashboards, and adds an AI coach on top: chat, training-plan proposals, insights and recaps.
+              A personal health and training analytics platform. It syncs wearable data from Apple
+              HealthKit into time-series dashboards, and puts an AI coach on top of it: chat, training-plan
+              proposals, insights and recaps.
             </p>
-            <ol class="flow">
-              <li><b>Apple HealthKit</b><span>Wearable data, via a companion iOS app</span></li>
-              <li><b>Convex</b><span>Time-series storage and dashboards</span></li>
-              <li><b>AI coach</b><span>Vercel AI SDK and Gemini</span></li>
-            </ol>
-            <ul class="tags card-foot" aria-label="Stack">
-              <li>Next.js</li><li>Convex</li><li>iOS</li><li>Vercel AI SDK</li><li>Gemini</li>
-            </ul>
+            <p class="chain">Apple HealthKit <i>→</i> Convex <i>→</i> Next.js dashboards <i>→</i> AI coach on the Vercel AI SDK and Gemini</p>
+            <a class="read" href="project.html?id=healthos">More about HealthOS</a>
           </article>
 
-          <article class="card reveal">
-            <div class="card-top">
-              <p class="mono">03 · Collaboration</p>
-            </div>
+          <article>
+            <p class="label">Collaboration</p>
             <h3>AI Instagram audit tool</h3>
             <p>
-              I'm supporting a collaborator in building a GenAI tool that audits creator accounts,
-              combining account data from Meta with analysis by Claude.
+              I'm supporting a collaborator in building a GenAI tool that audits creator accounts.
+              It combines the Meta Graph API, the Claude API and Supabase.
             </p>
-            <ol class="flow">
-              <li><b>Meta Graph API</b><span>Account and content data</span></li>
-              <li><b>Claude API</b><span>Analysis and the written audit</span></li>
-              <li><b>Supabase</b><span>Storage and backend</span></li>
-            </ol>
-            <ul class="tags card-foot" aria-label="Stack">
-              <li>Meta Graph API</li><li>Claude API</li><li>Supabase</li>
-            </ul>
+            <p class="chain">Meta Graph API <i>→</i> Claude API <i>→</i> Supabase</p>
           </article>
         </div>
 
-        <!-- Skills Workflow -->
-        <div class="subhead reveal">
+        <div class="sub">
           <h3>At Skills Workflow</h3>
           <p>Integrations and product work delivered inside the platform, for agencies and production teams.</p>
         </div>
 
-        <div class="cards three">
-          <article class="card reveal">
-            <div class="card-shot"><img src="assets/img/work/content-library.webp" alt="Content Library asset search inside Skills Workflow" width="1800" height="1105" loading="lazy"></div>
-            <div class="card-top">
-              <p class="mono">DAM integration</p>
-              <span class="go" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
-            </div>
-            <h3><a class="card-link" href="project.html?id=content-library">Content Library</a></h3>
+        <div class="trio">
+          <a href="project.html?id=content-library">
+            <div class="frame"><img src="assets/img/work/content-library.webp" alt="Content Library asset search inside Skills Workflow" width="1800" height="1105" loading="lazy"></div>
+            <h4>Content Library</h4>
+            <p class="label">DAM integration</p>
             <p>Digital asset search, carts and change requests inside the project workflow, with tasks created automatically.</p>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-shot"><img src="assets/img/work/online-proofing.webp" alt="Online proofing viewer embedded in Skills Workflow" width="1800" height="1124" loading="lazy"></div>
-            <div class="card-top">
-              <p class="mono">Review &amp; approval</p>
-              <span class="go" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
-            </div>
-            <h3><a class="card-link" href="project.html?id=online-proofing">Online Proofing</a></h3>
+          </a>
+          <a href="project.html?id=online-proofing">
+            <div class="frame"><img src="assets/img/work/online-proofing.webp" alt="Online proofing viewer embedded in Skills Workflow" width="1800" height="1124" loading="lazy"></div>
+            <h4>Online Proofing</h4>
+            <p class="label">Review and approval</p>
             <p>Ziflow proofing embedded in the platform, so teams review, annotate and approve creative work without switching tools.</p>
-          </article>
-
-          <article class="card reveal">
-            <div class="card-shot"><img src="assets/img/work/documentation.webp" alt="Skills Workflow documentation website" width="1800" height="1124" loading="lazy"></div>
-            <div class="card-top">
-              <p class="mono">Knowledge base</p>
-              <span class="go" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
-            </div>
-            <h3><a class="card-link" href="project.html?id=documentation">Documentation</a></h3>
+          </a>
+          <a href="project.html?id=documentation">
+            <div class="frame"><img src="assets/img/work/documentation.webp" alt="Skills Workflow documentation website" width="1800" height="1124" loading="lazy"></div>
+            <h4>Documentation</h4>
+            <p class="label">Knowledge base</p>
             <p>A searchable, versioned documentation site for the team and clients, built with Docusaurus and deployed continuously.</p>
-          </article>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- ===== About ===== -->
-    <section class="section" id="about">
+    <section class="section rule" id="about">
       <div class="wrap">
-        <p class="mono reveal" style="margin-bottom:28px">About</p>
-        <div class="about-grid">
-          <div class="about-text reveal">
+        <div class="about">
+          <div>
+            <h2 style="margin-bottom:28px">About</h2>
+            <p class="big">
+              I've spent more than ten years in client-facing roles delivering software. Today my focus is
+              generative AI and agentic systems.
+            </p>
             <p>
-              I've spent <mark>10+ years</mark> in client-facing roles delivering software.
-              Today my focus is <mark>generative AI and agentic systems</mark>: deciding what's worth building,
-              then getting it into people's hands.
+              At Skills Workflow I lead the integration of AI capabilities into the platform, including
+              conversational interfaces powered by LLMs. In my own projects I build GenAI applications end to end
+              with foundation models from OpenAI, Azure OpenAI, Anthropic and Google, and with agentic tooling
+              such as the Claude Agent SDK, OpenAI Agents SDK, Microsoft Agents and MCP.
             </p>
-            <p class="small">
-              At Skills Workflow I lead the integration of AI capabilities into the platform, including conversational
-              interfaces powered by LLMs. In my own projects I build GenAI applications end to end with foundation models
-              from OpenAI, Azure OpenAI, Anthropic and Google, and with agentic tooling such as the Claude Agent SDK,
-              OpenAI Agents SDK, Microsoft Agents and MCP.
+            <p>
+              I combine hands-on development in TypeScript, JavaScript and SQL with product management,
+              requirements definition and Agile/Scrum delivery.
             </p>
           </div>
-          <div class="aside-list reveal">
-            <div>
-              <h4>Languages</h4>
-              <ul>
-                <li>Portuguese <span>Native</span></li>
-                <li>English <span>Fluent</span></li>
-                <li>Spanish <span>Professional, B2/C1</span></li>
-              </ul>
-            </div>
-            <div>
-              <h4>Off the clock</h4>
-              <ul>
-                <li>Padel</li>
-                <li>Hyrox &amp; calisthenics</li>
-                <li>Travelling</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="pillars reveal">
-          <div>
-            <p class="mono">01</p>
-            <h3>Product</h3>
-            <p>Turning client needs into clear technical requirements, and steering delivery with Agile and Scrum.</p>
-          </div>
-          <div>
-            <p class="mono">02</p>
-            <h3>Build</h3>
-            <p>Hands-on development in TypeScript, JavaScript and SQL, working alongside design and engineering.</p>
-          </div>
-          <div>
-            <p class="mono">03</p>
-            <h3>AI</h3>
-            <p>LLM-powered conversational interfaces, agents that take real actions, and the guardrails around them.</p>
-          </div>
+          <aside>
+            <h3>Languages</h3>
+            <ul>
+              <li>Portuguese <span>Native</span></li>
+              <li>English <span>Fluent</span></li>
+              <li>Spanish <span>Professional, B2/C1</span></li>
+            </ul>
+            <h3>Off the clock</h3>
+            <ul>
+              <li>Padel</li>
+              <li>Hyrox and calisthenics</li>
+              <li>Travelling</li>
+            </ul>
+          </aside>
         </div>
       </div>
     </section>
 
     <!-- ===== Path ===== -->
-    <section class="section" id="path">
+    <section class="section rule" id="path">
       <div class="wrap">
-        <div class="section-head reveal">
-          <div>
-            <p class="mono">Path</p>
-            <h2>From client rooms to product, to AI</h2>
-          </div>
-          <p>I started next to the customer, moved into operations and product, and now work on AI. The customer part never left.</p>
+        <div class="section-intro">
+          <h2>Path</h2>
+          <p>I started next to the customer, moved into operations and product, and now work on AI.</p>
         </div>
 
-        <ol class="path">
-          <li class="stop reveal">
-            <p class="mono when">2019 → Now</p>
+        <ol class="rows">
+          <li>
+            <p class="when">2019 to now</p>
             <div>
               <h3>Head of Customization / Product Manager</h3>
-              <p class="where">Skills Workflow <span class="now">Current</span></p>
+              <p class="where">Skills Workflow</p>
             </div>
             <p class="what">
               I lead the integration of AI into the platform, including conversational interfaces powered by LLMs,
@@ -333,22 +263,22 @@
               and supervise client customizations so that what ships is right.
             </p>
           </li>
-          <li class="stop reveal">
-            <p class="mono when">2017 → Now</p>
+          <li>
+            <p class="when">2017 to now</p>
             <div>
               <h3>Operations Manager</h3>
-              <p class="where">Skills Workflow <span class="now">Current</span></p>
+              <p class="where">Skills Workflow</p>
             </div>
             <p class="what">
               In parallel I run operations: weekly product releases, operational policies and procedures audited
               against ISAE 3402, new tools that make the team faster, and tighter software licence costs.
             </p>
           </li>
-          <li class="stop reveal">
-            <p class="mono when">2015 → 2017</p>
+          <li>
+            <p class="when">2015 to 2017</p>
             <div>
               <h3>Head of Customer Support</h3>
-              <p class="where">B-Guest, a hospitality startup</p>
+              <p class="where">B-Guest, a startup</p>
             </div>
             <p class="what">
               We delivered one of Portugal's first mobile apps for online check-in and hotel service management.
@@ -356,8 +286,8 @@
               opportunities, and supported product development and QA.
             </p>
           </li>
-          <li class="stop reveal">
-            <p class="mono when">2014 → 2015</p>
+          <li>
+            <p class="when">2014 to 2015</p>
             <div>
               <h3>Client Manager</h3>
               <p class="where">Nextway Capital</p>
@@ -369,102 +299,63 @@
           </li>
         </ol>
 
-        <div class="study">
-          <div class="reveal">
-            <p class="mono">Master's · 2019 → 2021</p>
-            <h3>Information Management</h3>
-            <p>Specialization in Information Systems and Technology Management. NOVA IMS, Information Management School.</p>
-          </div>
-          <div class="reveal">
-            <p class="mono">Bachelor's · 2011 → 2014</p>
-            <h3>Finance and Accounting</h3>
-            <p>ISCTE, University Institute of Lisbon.</p>
-          </div>
-        </div>
+        <p class="rows-title">Education</p>
+        <ol class="rows">
+          <li>
+            <p class="when">2019 to 2021</p>
+            <div>
+              <h3>Master's in Information Management</h3>
+              <p class="where">NOVA IMS, Information Management School</p>
+            </div>
+            <p class="what">Specialization in Information Systems and Technology Management.</p>
+          </li>
+          <li>
+            <p class="when">2011 to 2014</p>
+            <div>
+              <h3>Bachelor's in Finance and Accounting</h3>
+              <p class="where">ISCTE, University Institute of Lisbon</p>
+            </div>
+            <p class="what"></p>
+          </li>
+        </ol>
       </div>
     </section>
 
     <!-- ===== Toolbox ===== -->
-    <section class="section" id="toolbox">
+    <section class="section rule" id="toolbox">
       <div class="wrap">
-        <div class="section-head reveal">
-          <div>
-            <p class="mono">Toolbox</p>
-            <h2>What I work with</h2>
-          </div>
-          <p>The tools I reach for most, grouped by what they're for.</p>
+        <div class="section-intro">
+          <h2>Toolbox</h2>
+          <p>What I reach for, grouped by what it's for.</p>
         </div>
-
-        <div class="toolbox">
-          <div class="tool wide reveal">
-            <p class="mono">Agents</p>
-            <h3>Agentic AI</h3>
-            <ul class="tags">
-              <li>Claude Agent SDK</li><li>OpenAI Agents SDK</li><li>Microsoft Agents</li><li>MCP (Model Context Protocol)</li><li>Multi-agent orchestration</li><li>AG-UI</li>
-            </ul>
-          </div>
-          <div class="tool reveal">
-            <p class="mono">Models</p>
-            <h3>GenAI &amp; LLMs</h3>
-            <ul class="tags">
-              <li>OpenAI API</li><li>Azure OpenAI</li><li>Anthropic Claude API</li><li>Google Gemini</li><li>Prompt engineering</li><li>Conversational AI</li>
-            </ul>
-          </div>
-          <div class="tool reveal">
-            <p class="mono">Code</p>
-            <h3>Development</h3>
-            <ul class="tags">
-              <li>TypeScript</li><li>JavaScript</li><li>Angular</li><li>React</li><li>Next.js</li><li>HTML/CSS</li><li>Node.js</li><li>SwiftUI</li>
-            </ul>
-          </div>
-          <div class="tool reveal">
-            <p class="mono">Infra</p>
-            <h3>Cloud &amp; platforms</h3>
-            <ul class="tags">
-              <li>Microsoft Azure</li><li>Azure OpenAI</li><li>Microsoft Foundry</li><li>Azure DevOps</li><li>Vercel</li><li>Supabase</li><li>Convex</li>
-            </ul>
-          </div>
-          <div class="tool reveal">
-            <p class="mono">Storage</p>
-            <h3>Data</h3>
-            <ul class="tags">
-              <li>SQL Server</li><li>PostgreSQL (Supabase)</li><li>Convex</li>
-            </ul>
-          </div>
-          <div class="tool reveal" style="grid-column:1/-1">
-            <p class="mono">Ways of working</p>
-            <h3>Tools &amp; methods</h3>
-            <ul class="tags">
-              <li>GitHub</li><li>Postman</li><li>JIRA</li><li>Make</li><li>HubSpot</li><li>Miro</li><li>Agile/Scrum</li><li>ISAE 3402</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Contact ===== -->
-    <section class="section contact" id="contact">
-      <div class="wrap">
-        <p class="mono">Contact</p>
-        <h2><a href="mailto:afonsogcardoso@gmail.com">Let's talk.</a></h2>
-        <div class="contact-row">
-          <div><span class="mono">Email</span><a href="mailto:afonsogcardoso@gmail.com">afonsogcardoso@gmail.com</a></div>
-          <div><span class="mono">LinkedIn</span><a href="https://www.linkedin.com/in/afonsogcardoso" target="_blank" rel="noopener">in/afonsogcardoso</a></div>
-          <div><span class="mono">GitHub</span><a href="https://github.com/afonsogcardoso" target="_blank" rel="noopener">afonsogcardoso</a></div>
-          <div><span class="mono">Based in</span><span style="font-size:18px;font-weight:500">Barcelona, Spain</span></div>
-        </div>
+        <dl class="rows tools">
+          <div><dt>Agentic AI</dt><dd>Claude Agent SDK, OpenAI Agents SDK, Microsoft Agents, MCP (Model Context Protocol), multi-agent orchestration, AG-UI</dd></div>
+          <div><dt>GenAI and LLMs</dt><dd>OpenAI API, Azure OpenAI, Anthropic Claude API, Google Gemini, prompt engineering, conversational AI</dd></div>
+          <div><dt>Cloud and platforms</dt><dd>Microsoft Azure (Azure OpenAI, Microsoft Foundry, Azure DevOps), Vercel, Supabase, Convex</dd></div>
+          <div><dt>Development</dt><dd>TypeScript, JavaScript, Angular, React, Next.js, HTML/CSS, Node.js, SwiftUI</dd></div>
+          <div><dt>Data</dt><dd>SQL Server, PostgreSQL (Supabase), Convex</dd></div>
+          <div><dt>Tools and methods</dt><dd>GitHub, Postman, JIRA, Make, HubSpot, Miro, Agile/Scrum, ISAE 3402</dd></div>
+        </dl>
       </div>
     </section>
 
   </main>
 
-  <footer class="site-footer">
+  <!-- ===== Contact ===== -->
+  <footer class="band contact" id="contact">
     <div class="wrap">
-      <span>© <span id="year">2026</span> Afonso Cardoso</span>
-      <a href="#top">Back to top ↑</a>
+      <h2>Working on something with AI agents? I'd like to hear about it.</h2>
+      <a class="mail" href="mailto:afonsogcardoso@gmail.com">afonsogcardoso@gmail.com</a>
+      <p class="else">
+        <a href="https://www.linkedin.com/in/afonsogcardoso" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/afonsogcardoso" target="_blank" rel="noopener">GitHub</a>
+        <span>Barcelona, Spain</span>
+      </p>
+      <div class="foot">
+        <span>© 2026 Afonso Cardoso</span>
+        <a href="#main">Back to top</a>
+      </div>
     </div>
   </footer>
-
-  <script src="assets/js/site.js"></script>
 </body>
 </html>
